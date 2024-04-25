@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+
+html {
+  font-size: $initial-fsz;
+}
+
+html,
+body,
+.root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: $fw-light;
+  font-style: $fs-normal;
+  font-size: 1.125rem;
+  line-height: 1.44;
+  color: #262a3f;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.container {
+  max-width: 1202px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.header,
+.footer {
+  flex-shrink: 0;
+}
