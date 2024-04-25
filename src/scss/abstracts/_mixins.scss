@@ -33,3 +33,9 @@
   text-transform: $t-transform;
   color: $color;
 }
+
+@mixin responsive-image {
+  @include width-height($full-width, $full-height);
+  display: block;
+  object-fit: cover;
+}
