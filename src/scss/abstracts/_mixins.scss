@@ -21,6 +21,7 @@
   $f-size: 1.125rem,
   $l-height: 1.44,
   $l-spacing: normal,
+  $w-spacing: normal,
   $t-transform: none,
   $color: $main-text-color
 ) {
@@ -30,6 +31,7 @@
   font-size: $f-size;
   line-height: $l-height;
   letter-spacing: $l-spacing;
+  word-spacing: $w-spacing;
   text-transform: $t-transform;
   color: $color;
 }

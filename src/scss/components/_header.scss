@@ -1,0 +1,52 @@
+@use './../abstracts' as *;
+
+.header {
+  @include flex($justification: center);
+  @include width-height($full-width);
+  margin-top: 30px;
+  z-index: 10;
+  background: $linear-background;
+  @supports (backdrop-filter: none) {
+    background: $linear-background;
+    backdrop-filter: blur(2px);
+  }
+  @include for-phone-only {
+    margin-top: 12px;
+  }
+
+  &__inner {
+    @include flex($alignment: center, $justification: space-between);
+    @include width-height($full-width);
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    @include for-phone-only {
+      padding-top: 24px;
+      padding-bottom: 17px;
+    }
+  }
+
+  &__logo-icon {
+    @include width-height(107.2px, 32px);
+  }
+
+  &__nav {
+    @include flex($alignment: center, $justification: space-between);
+    gap: 30px;
+    @include for-tablet-landscape-down {
+      display: none;
+    }
+
+    &-link {
+      @include fonts(
+        $f-weight: $fw-regular,
+        $f-size: 0.875rem,
+        $l-height: 1.714,
+        $l-spacing: 0.0665em,
+        $w-spacing: 0.0625em,
+        $t-transform: capitalize
+      );
+      padding: 5px 0;
+    }
+  }
+}

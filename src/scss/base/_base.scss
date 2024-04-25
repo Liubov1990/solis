@@ -33,3 +33,16 @@ body {
 .footer {
   flex-shrink: 0;
 }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+}

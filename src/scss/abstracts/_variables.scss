@@ -17,3 +17,11 @@ $max-content-width: 1202;
 
 $full-width: 100%;
 $full-height: 100%;
+
+$linear-background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)),
+  linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.244636) 24.1%,
+    rgba(255, 255, 255, 0) 47.19%
+  );
