@@ -1,4 +1,6 @@
 @use './variables' as *;
+@use './colors' as *;
+@use './functions' as *;
 
 @mixin width-height($width: auto, $height: auto) {
   width: $width;
@@ -10,4 +12,24 @@
   flex-direction: $direction;
   align-items: $alignment;
   justify-content: $justification;
+}
+
+@mixin fonts(
+  $f-family: font('lato'),
+  $f-style: $fs-normal,
+  $f-weight: $fw-light,
+  $f-size: 1.125rem,
+  $l-height: 1.44,
+  $l-spacing: normal,
+  $t-transform: none,
+  $color: $main-text-color
+) {
+  font-family: $f-family;
+  font-style: $f-style;
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $l-height;
+  letter-spacing: $l-spacing;
+  text-transform: $t-transform;
+  color: $color;
 }

@@ -1,0 +1,8 @@
+@use 'sass:map';
+@use 'sass:string';
+
+@use './variables' as *;
+
+@function font($font) {
+  @return string.unquote(map.get($gfonts, $font));
+}

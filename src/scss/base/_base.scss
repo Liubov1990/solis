@@ -11,12 +11,7 @@ body,
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: $fw-light;
-  font-style: $fs-normal;
-  font-size: 1.125rem;
-  line-height: 1.44;
-  color: #262a3f;
+  @include fonts();
 }
 
 .root {
