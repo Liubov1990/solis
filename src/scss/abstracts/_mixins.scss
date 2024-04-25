@@ -1,0 +1,6 @@
+@use './variables' as *;
+
+@mixin width-height($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}

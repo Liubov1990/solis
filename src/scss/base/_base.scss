@@ -1,4 +1,4 @@
-@use "../abstracts" as *;
+@use '../abstracts' as *;
 
 html {
   font-size: $initial-fsz;
@@ -7,12 +7,11 @@ html {
 html,
 body,
 .root {
-  height: 100%;
-  width: 100%;
+  @include width-height($full-width, $full-height);
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: $fw-light;
   font-style: $fs-normal;
   font-size: 1.125rem;
@@ -27,8 +26,8 @@ body {
 }
 
 .main {
+  @include width-height($full-width);
   flex: 1 0 auto;
-  width: 100%;
 }
 
 .container {
