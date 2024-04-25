@@ -34,6 +34,12 @@
   color: $color;
 }
 
+@mixin responsive-font($min-size, $max-size) {
+  $font-diff: $max-size - $min-size;
+  $screen-diff: $max-content-width - 320;
+  font-size: calc(#{$min-size + px} + #{$font-diff} * ((100vw - #{$min-content-width}) / #{$screen-diff}));
+}
+
 @mixin responsive-image {
   @include width-height($full-width, $full-height);
   display: block;
