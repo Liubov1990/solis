@@ -42,11 +42,29 @@
         $f-weight: $fw-regular,
         $f-size: 0.875rem,
         $l-height: 1.714,
-        $l-spacing: 0.0665em,
+        $l-spacing: 0.0669em,
         $w-spacing: 0.0625em,
         $t-transform: capitalize
       );
+      position: relative;
       padding: 5px 0;
+
+      &::after {
+        @include width-height(0, 3px);
+        content: '';
+        position: absolute;
+        left: -1px;
+        bottom: 2px;
+        background: $coral-color;
+        transition: all 0.5s ease;
+      }
+
+      &:visited::after,
+      &:hover::after,
+      &:active::after,
+      &:focus::after {
+        width: calc($full-width + 3px);
+      }
     }
   }
 }
