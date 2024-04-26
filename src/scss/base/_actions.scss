@@ -1,0 +1,11 @@
+@use './../abstracts' as *;
+
+.root:has(.header__burger--squeeze.is-active) {
+  .main-bg {
+    display: none;
+  }
+
+  .header__logo-icon-color {
+    --fill-logo-color: #{$black-color};
+  }
+}

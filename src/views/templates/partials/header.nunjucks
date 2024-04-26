@@ -2,7 +2,7 @@
   <div class="container header__inner">
     <div class="header__logo">
       <a href="#">
-        <svg class="header__logo-icon">
+        <svg class="header__logo-icon header__logo-icon-color">
           <use xlink:href="./src/assets/sprite.svg#logo" />
         </svg>
       </a>
@@ -15,7 +15,7 @@
       <a href="#" class="header__nav-link">Pricing</a>
       <a href="#" class="header__nav-link">Resources</a>
     </nav>
-    <div class="header__burger header__burger--squeeze">
+    <div id="burger" class="header__burger header__burger--squeeze">
       <div class="header__burger-box">
         <div class="header__burger-inner"></div>
       </div>
