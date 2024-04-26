@@ -1,3 +1,9 @@
+@mixin for-laptop-up {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
 @mixin for-tablet-landscape-down {
   @media screen and (max-width: 900px) {
     @content;

@@ -33,6 +33,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
+      height: auto;
       @include for-phone-only {
         height: auto;
       }
@@ -54,6 +55,17 @@ body {
 .header,
 .footer {
   flex-shrink: 0;
+}
+
+.accent {
+  @include fonts(
+    $f-family: inherit,
+    $f-style: $fs-italic,
+    $f-weight: inherit,
+    $f-size: inherit,
+    $l-height: inherit,
+    $color: $mint-color
+  );
 }
 
 a {
