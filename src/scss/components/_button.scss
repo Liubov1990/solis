@@ -1,0 +1,54 @@
+@use './../abstracts' as *;
+
+.button {
+  @include fonts(
+    $f-family: inherit,
+    $f-size: 1.25rem,
+    $f-weight: $fw-bold,
+    $l-height: 1,
+    $l-spacing: 0.08em,
+    $t-transform: uppercase,
+    $color: $coral-color
+  );
+  position: relative;
+  background: transparent;
+  border: none;
+  padding-inline: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: $dark-coral-color;
+
+    &::after {
+      color: $dark-coral-color;
+    }
+  }
+
+  &::after {
+    @include width-height(112px, 13px);
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: $coral-color;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  &--bordered {
+    text-align: center;
+    border: $button-border;
+    padding: 33px 95px 36px 88px;
+
+    &:hover {
+      border-color: $dark-coral-color;
+    }
+
+    &::after {
+      top: 44px;
+      left: 97px;
+    }
+  }
+}
