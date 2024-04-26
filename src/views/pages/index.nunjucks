@@ -1,1 +1,7 @@
-{% extends "layout.nunjucks" %}
+{% extends "layout.nunjucks" %} {% block content %}
+<div id="root" class="root">
+  {% include "partials/main-bg.nunjucks" %} {% include "partials/header.nunjucks" %}
+  <main class="main"></main>
+  {% include "partials/footer.nunjucks" %}
+</div>
+{% endblock %}

@@ -1,0 +1,70 @@
+@use '../abstracts' as *;
+
+html {
+  font-size: $initial-fsz;
+}
+
+html,
+body,
+.root {
+  @include width-height($full-width, $full-height);
+}
+
+body {
+  @include fonts();
+  background: $white-color;
+}
+
+.root {
+  @include flex(column, center);
+  position: relative;
+
+  .main-bg {
+    @include width-height($full-width);
+
+    &__picture {
+      @include width-height($full-width);
+      display: block;
+      z-index: -10;
+    }
+
+    &__image {
+      @include responsive-image();
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include for-phone-only {
+        height: auto;
+      }
+    }
+  }
+}
+
+.main {
+  @include width-height($full-width);
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1202px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.header,
+.footer {
+  flex-shrink: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+}

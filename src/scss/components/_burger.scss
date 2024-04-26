@@ -1,0 +1,92 @@
+@use './../abstracts' as *;
+
+.header {
+  &__burger {
+    background: transparent;
+    padding: 6.5px 2.5px;
+    overflow: visible;
+    cursor: pointer;
+    transition: opacity 0.5ms ease;
+    display: none;
+    @include for-tablet-landscape-down {
+      display: inline-block;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &-box {
+      @include width-height(25.5px, 18px);
+      position: relative;
+      display: inline-block;
+      transition: transform 0.15s ease;
+    }
+
+    &-inner {
+      top: 50%;
+      margin-top: -2px;
+
+      &,
+      &::before,
+      &::after {
+        @include width-height(24px, 2.8px);
+        display: block;
+        position: absolute;
+        background-color: $black-color;
+        transition: transform 0.15s ease;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+      }
+
+      &::before {
+        top: -6.5px;
+      }
+
+      &::after {
+        bottom: -6.4px;
+      }
+    }
+  }
+
+  &__burger--squeeze &__burger-inner {
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  &__burger--squeeze &__burger-inner::before {
+    transition: top 0.1s 0.14s ease, opacity 0.1s ease;
+  }
+
+  &__burger--squeeze &__burger-inner::after {
+    transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  &__burger--squeeze.is-active &__burger-inner {
+    transform: rotate(45deg);
+    transition-delay: 0.14s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  &__burger--squeeze.is-active &__burger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease, opacity 0.1s 0.14s ease;
+  }
+
+  &__burger--squeeze.is-active &__burger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  &__burger--squeeze.is-active &__burger-box,
+  &__burger--squeeze.is-active &__burger-inner,
+  &__burger--squeeze.is-active &__burger-inner::before,
+  &__burger--squeeze.is-active &__burger-inner::after {
+    width: 27.5px;
+  }
+}

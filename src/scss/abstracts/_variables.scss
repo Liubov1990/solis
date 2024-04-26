@@ -1,0 +1,27 @@
+$gfonts: (
+  'lato': '"Lato", sans-serif',
+  'play': '"Playfair Display", serif'
+);
+
+$initial-fsz: 16px;
+
+$fs-normal: normal;
+$fs-italic: italic;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 700;
+
+$min-content-width: 320px;
+$max-content-width: 1202;
+
+$full-width: 100%;
+$full-height: 100%;
+
+$linear-background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)),
+  linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.244636) 24.1%,
+    rgba(255, 255, 255, 0) 47.19%
+  );

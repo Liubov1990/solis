@@ -12,13 +12,12 @@ import gulpCopy from 'gulp-copy';
 
 const sass = gulpSass(dartSass);
 
-export const copy = function() {
-  return gulp
-  .src('src/assets/**/*').pipe(gulpCopy('dist'));
-}
+export const copy = function () {
+  return gulp.src('src/assets/**/*').pipe(gulpCopy('dist'));
+};
 
-export const js = function() {
- return gulp
+export const js = function () {
+  return gulp
     .src('src/js/*js')
     .pipe(
       babel({
@@ -28,10 +27,10 @@ export const js = function() {
     .pipe(concat('index.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'));
-}
+};
 
-export const css = function() {
- return gulp
+export const css = function () {
+  return gulp
     .src('src/scss/*.scss')
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(
@@ -42,21 +41,22 @@ export const css = function() {
     )
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.stream());
-}
+};
 
-export const nunjucks = function() {
- return gulp
+export const nunjucks = function () {
+  return gulp
     .src('src/views/pages/*.+(html|nunjucks)')
     .pipe(
       gulpNunjucksRender({
         path: ['src/views/templates/']
       })
     )
-    .pipe(gulp.dest('dist'));
-}
+    .pipe(gulp.dest('dist'))
+    .pipe(browserSync.reload({ stream: true }));
+};
 
-export const nunjucksMinify = function() {
-return  gulp
+export const nunjucksMinify = function () {
+  return gulp
     .src('src/views/pages/*.+(html|nunjucks)')
     .pipe(
       gulpNunjucksRender({
@@ -69,19 +69,18 @@ return  gulp
       })
     )
     .pipe(gulp.dest('dist/'));
-}
+};
 
-export const watchFiles = function() {
+export const watchFiles = function () {
   browserSync.init({
     server: {
       baseDir: 'dist/'
     }
   });
   gulp.watch('src/scss/**/*.scss', css);
-  gulp.watch('src/js/*.js', js).on('change', browserSync.reload);
-  gulp.watch('src/views/index.+(html|nunjucks)', nunjucks).on('change', browserSync.reload);
-  gulp.watch('src/views/templates/*.+(html|nunjucks)', nunjucks).on('change', browserSync.reload);
-}
+  gulp.watch('src/js/**/*js', js).on('change', browserSync.reload);
+  gulp.watch('src/views/**/*.+(html|nunjucks)', nunjucks).on('change', browserSync.reload);
+};
 
 const start = series(nunjucks, copy, css, js, watchFiles);
 
