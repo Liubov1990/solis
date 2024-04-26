@@ -21,11 +21,11 @@ body {
 
   .main-bg {
     @include width-height($full-width);
+    z-index: -100;
 
     &__picture {
       @include width-height($full-width);
       display: block;
-      z-index: -10;
     }
 
     &__image {
