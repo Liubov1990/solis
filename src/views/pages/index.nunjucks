@@ -1,6 +1,6 @@
 {% extends "layout.nunjucks" %} {% block content %}
 <div class="root">
-  {% include "partials/header.nunjucks" %}
+  {% include "partials/main-bg.nunjucks" %} {% include "partials/header.nunjucks" %}
   <main class="main"></main>
   {% include "partials/footer.nunjucks" %}
 </div>

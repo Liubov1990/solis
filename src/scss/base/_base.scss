@@ -12,10 +12,29 @@ body,
 
 body {
   @include fonts();
+  background: $white-color;
 }
 
 .root {
   @include flex(column, center);
+  position: relative;
+
+  .main-bg {
+    @include width-height($full-width);
+
+    &__picture {
+      @include width-height($full-width);
+      display: block;
+      z-index: -10;
+    }
+
+    &__image {
+      @include responsive-image();
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 .main {

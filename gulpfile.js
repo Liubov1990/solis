@@ -79,7 +79,7 @@ export const watchFiles = function () {
   });
   gulp.watch('src/scss/**/*.scss', css);
   gulp.watch('src/js/**/*js', js).on('change', browserSync.reload);
-  gulp.watch('src/views/templates/**/*.+(html|nunjucks)', nunjucks).on('change', browserSync.reload);
+  gulp.watch('src/views/**/*.+(html|nunjucks)', nunjucks).on('change', browserSync.reload);
 };
 
 const start = series(nunjucks, copy, css, js, watchFiles);
