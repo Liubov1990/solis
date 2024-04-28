@@ -1,0 +1,53 @@
+<div class="benefits">
+  <div class="container benefits__inner">
+    <div class="benefits__item">
+      {% include "./horisontal-rule.nunjucks" %}
+      <h2 class="heading">Qualified <i class="accent">traders</i> and liquidty <i class="accent">solutions</i></h2>
+      <p>
+        Trade easily and efficiently between 12 stablecoins, including
+        <dfn title="A type of cryptocurrency that is pegged to a fiat currency, namely the U.S. dollar.">USDT</dfn>,
+        <dfn title="A stablecoin pegged to the US dollar, with live on-chain attestations by independent institutions."
+          >TrueUSD</dfn
+        >, <dfn title="Dai (or DAI, formerly Sai or SAI) is a stablecoin token on the Ethereum blockchain.">Dai</dfn>,
+        <dfn title="A Euro-based (EUR) cryptocurrency falling under the “stablecoin” category of cryptocurrencies."
+          >Eurs</dfn
+        >
+        and <dfn title="A U.S. dollar-backed stablecoin —a digital representation of cash.">Gemini Dollar</dfn>.
+      </p>
+    </div>
+    <div class="benefits__item">
+      {% include "./horisontal-rule.nunjucks" %}
+      <h2>The best <i class="accent">payments solutions</i></h2>
+      <p>
+        For all stablecoin payments, from point-of-sale transactions to website solutions. If you use stablecoins in
+        your business, Stablehouse is for you.
+      </p>
+    </div>
+    <div class="benefits__item">
+      {% include "./horisontal-rule.nunjucks" %}
+      <h2>
+        Settlement/<dfn
+          ><abbr
+            title="Over-the-counter (OTC) or off-exchange trading or pink sheet trading is done directly between two parties, without the supervision of an exchange."
+            >OTC</abbr
+          ></dfn
+        >
+        <abbr title="Application Programming Interface">API</abbr> and <i class="accent">integration</i>
+      </h2>
+      <p>
+        Integrate<abbr
+          title="Over-the-counter (OTC) or off-exchange trading or pink sheet trading is done directly between two parties, without the supervision of an exchange."
+          >OTC</abbr
+        >
+        operations and settlements using our efficient <abbr title="Application Programming Interface">API</abbr>.
+      </p>
+    </div>
+    {% include "./horisontal-rule.nunjucks" %}
+    <div class="benefits__item">
+      <h2><i class="accent">Treasury</i> and <i class="accent">returns</i> for stablecoin stores</h2>
+      <p>
+        Automate your stablecoin store with instant payments and on-the-fly conversion between different stablecoins.
+      </p>
+    </div>
+  </div>
+</div>

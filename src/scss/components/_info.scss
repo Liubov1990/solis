@@ -7,8 +7,10 @@
   &__text-block {
     padding-top: 45px;
     padding-bottom: 4px;
+    margin-bottom: 70px;
     @include for-tablet-landscape-down {
       gap: 32px;
+      margin-bottom: 0;
     }
     @include for-tablet-landscape-down {
       gap: 13px;
