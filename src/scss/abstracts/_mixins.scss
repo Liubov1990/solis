@@ -38,8 +38,14 @@
 
 @mixin responsive-font($min-size, $max-size) {
   $font-diff: $max-size - $min-size;
-  $screen-diff: $max-content-width - 320;
+  $screen-diff: $max-content-width - 375;
   font-size: calc(#{$min-size + px} + #{$font-diff} * ((100vw - #{$min-content-width}) / #{$screen-diff}));
+}
+
+@mixin responsive-line-height($min-size, $max-size) {
+  $line-height-diff: $max-size - $min-size;
+  $screen-diff: $max-content-width - 375;
+  line-height: calc(#{$min-size + px} + #{$line-height-diff} * ((100vw - #{$min-content-width}) / #{$screen-diff}));
 }
 
 @mixin responsive-image {

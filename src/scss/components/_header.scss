@@ -17,13 +17,8 @@
   &__inner {
     @include flex($alignment: center, $justification: space-between);
     @include width-height($full-width);
-    padding-top: 21px;
-    padding-bottom: 21px;
-
-    @include for-phone-only {
-      padding-top: 24px;
-      padding-bottom: 17px;
-    }
+    padding-top: 24px;
+    padding-bottom: 17px;
   }
 
   &__logo-icon {
@@ -37,17 +32,19 @@
   &__nav {
     @include flex($alignment: center, $justification: space-between);
     gap: 30px;
+    transform: translateY(-3px);
     @include for-tablet-landscape-down {
-      @include width-height($full-width, calc(100vh - 111px));
+      @include width-height($full-width, calc(100vh - 109px));
       flex-direction: column;
       justify-content: flex-start;
       gap: 27px;
       position: fixed;
-      top: 81px;
+      top: 79px;
       left: 0;
       background-color: white;
       padding: 64px 15px;
       box-sizing: border-box;
+      transform: translateY(0);
       z-index: 100;
       overflow-y: hidden;
       display: none;
@@ -57,7 +54,7 @@
       }
     }
     @include for-phone-only {
-      height: calc(100vh - 96px);
+      height: calc(100vh - 92px);
       top: 80px;
     }
 
