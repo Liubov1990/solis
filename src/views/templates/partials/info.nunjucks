@@ -1,4 +1,4 @@
-<div class="info">
+<div class="section info">
   <div class="container section__inner info__inner">
     <picture class="bg-picture bg-picture--half-width">
       <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/statistic-bg.avif" />

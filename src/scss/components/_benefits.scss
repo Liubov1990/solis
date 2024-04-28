@@ -1,0 +1,45 @@
+@use './../abstracts' as *;
+
+.benefits {
+  @include flex(column, center);
+
+  &__item {
+    padding-left: 35px;
+    padding-right: 35px;
+    @include for-phone-only {
+      padding-left: 0;
+      padding-right: 5px;
+    }
+
+    &:last-child {
+      .benefits__heading {
+        max-width: 415px;
+      }
+    }
+  }
+
+  &__inner {
+    @include width-height($full-width);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 93px 30px;
+    @include for-tablet-landscape-down {
+      row-gap: 18px;
+    }
+    @include for-tablet-portrait-down {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__heading {
+    @include width-height($full-width);
+    max-width: 440px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    @include for-phone-only {
+      margin-top: 37px;
+      margin-bottom: 15px;
+    }
+  }
+}
