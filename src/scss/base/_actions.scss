@@ -1,7 +1,7 @@
 @use './../abstracts' as *;
 
 .root:has(.header__burger--squeeze.is-active) {
-  .main-bg {
+  .bg-picture {
     display: none;
   }
 

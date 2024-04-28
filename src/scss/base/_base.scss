@@ -18,27 +18,6 @@ body {
 .root {
   @include flex(column, center);
   position: relative;
-
-  .main-bg {
-    @include width-height($full-width);
-    z-index: -100;
-
-    &__picture {
-      @include width-height($full-width);
-      display: block;
-    }
-
-    &__image {
-      @include responsive-image();
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: auto;
-      @include for-phone-only {
-        height: auto;
-      }
-    }
-  }
 }
 
 .main {
@@ -57,6 +36,34 @@ body {
   flex-shrink: 0;
 }
 
+.bg-picture {
+  @include width-height($full-width);
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -100;
+
+  &--half-width {
+    @include width-height(47.4%);
+    left: 15px;
+    z-index: -50;
+    @include for-tablet-landscape-down {
+      display: none;
+    }
+  }
+}
+
+.bg-image {
+  @include responsive-image();
+  &--height {
+    height: auto;
+  }
+  &--no-responsive {
+    width: auto;
+  }
+}
+
 .accent {
   @include fonts(
     $f-family: inherit,
@@ -66,6 +73,48 @@ body {
     $l-height: inherit,
     $color: $mint-color
   );
+}
+
+.text {
+  @include responsive-font(16, 18);
+
+  @include for-laptop-up {
+    font-size: 1.125rem;
+  }
+  @include for-tablet-portrait-down {
+    line-height: 1.5;
+  }
+}
+
+.section__inner {
+  @include flex(row-reverse, center);
+  @include width-height($full-width);
+  position: relative;
+}
+
+.section__text-block {
+  @include flex($justification: space-between);
+  @include width-height($full-width);
+  max-width: 770px;
+  background: $white-color;
+  opacity: 0.9;
+  margin-top: 45px;
+  box-sizing: border-box;
+  @include for-tablet-landscape-down {
+    max-width: 100%;
+    margin-top: 0;
+  }
+  @include for-phone-only {
+    flex-direction: column;
+  }
+
+  &-column {
+    flex-basis: 48%;
+
+    &--wide {
+      flex-basis: 52%;
+    }
+  }
 }
 
 a {

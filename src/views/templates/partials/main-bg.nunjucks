@@ -1,21 +1,19 @@
-<div class="main-bg">
-  <picture class="main-bg__picture">
-    <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/bg.avif" />
-    <source type="image/avif" media="(max-width: 599px)" srcset="./src/assets/images/mobile/avif/bg.avif" />
-    <source type="image/avif" media="(max-width: 899px)" srcset="./src/assets/images/tablet/avif/bg.avif" />
+<picture class="bg-picture">
+  <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/bg.avif" />
+  <source type="image/avif" media="(max-width: 599px)" srcset="./src/assets/images/mobile/avif/bg.avif" />
+  <source type="image/avif" media="(max-width: 899px)" srcset="./src/assets/images/tablet/avif/bg.avif" />
 
-    <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/bg.webp" />
-    <source type="image/webp" media="(max-width: 599px)" srcset="./src/assets/images/mobile/webp/bg.webp" />
-    <source type="image/webp" media="(max-width: 899px)" srcset="./src/assets/images/tablet/webp/bg.webp" />
+  <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/bg.webp" />
+  <source type="image/webp" media="(max-width: 599px)" srcset="./src/assets/images/mobile/webp/bg.webp" />
+  <source type="image/webp" media="(max-width: 899px)" srcset="./src/assets/images/tablet/webp/bg.webp" />
 
-    <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/bg.png" />
-    <source type="image/png" media="(max-width: 599px)" srcset="./src/assets/images/mobile/png/bg.png" />
-    <source type="image/png" media="(max-width: 899px)" srcset="./src/assets/images/tablet/png/bg.png" />
+  <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/bg.png" />
+  <source type="image/png" media="(max-width: 599px)" srcset="./src/assets/images/mobile/png/bg.png" />
+  <source type="image/png" media="(max-width: 899px)" srcset="./src/assets/images/tablet/png/bg.png" />
 
-    <img
-      src="./src/assets/images/laptop/png/bg.png"
-      alt="Perspective of many-storeyed abstract buildings on white background rising to top"
-      class="main-bg__image"
-    />
-  </picture>
-</div>
+  <img
+    src="./src/assets/images/laptop/png/bg.png"
+    alt="Perspective of many-storeyed abstract buildings on white background rising to top"
+    class="bg-image bg-image--height"
+  />
+</picture>

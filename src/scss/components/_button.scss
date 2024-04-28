@@ -27,7 +27,7 @@
   }
 
   &::after {
-    @include width-height(112px, 13px);
+    @include width-height(98%, 13px);
     content: '';
     position: absolute;
     top: 11px;
