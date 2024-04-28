@@ -1,4 +1,4 @@
-<div class="info">
+<div class="section info">
   <div class="container section__inner info__inner">
     <picture class="bg-picture bg-picture--half-width">
       <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/statistic-bg.avif" />
@@ -43,7 +43,8 @@
           house for stablecoins that seeks to promote the next phase of the market’s development.
         </p>
         <p class="text info__about-text">
-          The API-enabled, centralized platform addresses the key issues of inconsistent liquidity, stability and
+          The <dfn><abbr title="Application Programming Interface">API</abbr></dfn
+          >-enabled, centralized platform addresses the key issues of inconsistent liquidity, stability and
           accessibility which are currently preventing the stablecoin market from reaching critical mass.
         </p>
         <button type="button" class="button">Contact sales</button>

@@ -36,6 +36,37 @@ body {
   flex-shrink: 0;
 }
 
+.heading {
+  @include fonts($f-family: font('play'), $f-weight: $fw-regular);
+  @include responsive-font(32, 40);
+  @include responsive-line-height(40, 48);
+  @include for-laptop-up {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+
+.text {
+  @include responsive-font(16, 18);
+  @include for-laptop-up {
+    font-size: 1.125rem;
+  }
+  @include for-tablet-portrait-down {
+    line-height: 1.5;
+  }
+}
+
+.accent {
+  @include fonts(
+    $f-family: inherit,
+    $f-style: $fs-italic,
+    $f-weight: inherit,
+    $f-size: inherit,
+    $l-height: inherit,
+    $color: $mint-color
+  );
+}
+
 .bg-picture {
   @include width-height($full-width);
   position: absolute;
@@ -64,25 +95,16 @@ body {
   }
 }
 
-.accent {
-  @include fonts(
-    $f-family: inherit,
-    $f-style: $fs-italic,
-    $f-weight: inherit,
-    $f-size: inherit,
-    $l-height: inherit,
-    $color: $mint-color
-  );
+.horisontal-rule {
+  border: none;
+  border-top: 1px solid $grey-border-color;
+  margin: 0;
 }
 
-.text {
-  @include responsive-font(16, 18);
-
-  @include for-laptop-up {
-    font-size: 1.125rem;
-  }
-  @include for-tablet-portrait-down {
-    line-height: 1.5;
+.section {
+  padding-bottom: 120px;
+  @include for-phone-only {
+    padding-bottom: 58px;
   }
 }
 
@@ -128,4 +150,13 @@ a:hover,
 a:active,
 a:focus {
   outline: none;
+}
+
+dfn,
+abbr {
+  font-style: inherit;
+}
+
+.root abbr[title] {
+  text-decoration: none;
 }
