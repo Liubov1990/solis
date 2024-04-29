@@ -2,6 +2,7 @@
 
 .quote {
   @include flex(column, center);
+  padding-bottom: 119px;
 
   &__inner {
     @include width-height($full-width);

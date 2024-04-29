@@ -1,0 +1,75 @@
+@use './../abstracts' as *;
+
+.video {
+  @include flex(column, center);
+
+  &__inner {
+    @include flex(column, center, center);
+    @include width-height($full-width);
+  }
+
+  &__figure {
+    max-width: 970px;
+    margin: 0;
+  }
+
+  &__tablet {
+    border: 1px solid $grey-border-color;
+    border-radius: 31px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 31px 70px 24px 30px;
+    box-sizing: border-box;
+    max-width: 970px;
+    width: 100%;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      background: transparent;
+      border: 1px solid $grey-border-color;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+
+    &::before {
+      @include width-height(13px, 13px);
+      left: 7px;
+      top: calc(50% - 6px);
+    }
+
+    &::after {
+      @include width-height(35px, 35px);
+      right: 13px;
+      top: calc(50% - 18px);
+    }
+  }
+
+  &__screensaver {
+    position: absolute;
+    top: 31px;
+    left: 29px;
+    max-width: 871px;
+    max-height: 538px;
+  }
+
+  &__frame {
+    @include width-height($full-width, $full-height);
+    max-width: 871px;
+    max-height: 538px;
+    aspect-ratio: 16 / 9.93;
+    border: none;
+    box-sizing: border-box;
+  }
+
+  &__figcaption {
+    padding-right: 80px;
+    box-sizing: border-box;
+  }
+
+  &__heading {
+    margin-top: 51px;
+    margin-bottom: 26px;
+  }
+}

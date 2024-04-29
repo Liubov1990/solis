@@ -29,6 +29,10 @@ body {
   max-width: 1202px;
   padding: 0 16px;
   box-sizing: border-box;
+
+  &--small {
+    max-width: 1081px;
+  }
 }
 
 .header,
