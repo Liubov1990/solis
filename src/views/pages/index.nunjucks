@@ -3,7 +3,8 @@
   {% include "partials/main-bg.nunjucks" %} {% include "partials/header.nunjucks" %}
   <main class="main">
     {% include "partials/hero.nunjucks" %} {% include "partials/info.nunjucks" %} {% include
-    "partials/benefits.nunjucks" %} {% include "partials/quote.nunjucks" %} {% include "partials/video.nunjucks" %}
+    "partials/benefits.nunjucks" %} {% include "partials/quote.nunjucks" %} {% include "partials/video.nunjucks" %} {%
+    include "partials/features.nunjucks" %}
   </main>
   {% include "partials/footer.nunjucks" %}
 </div>

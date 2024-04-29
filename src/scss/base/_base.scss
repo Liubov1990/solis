@@ -131,14 +131,6 @@ body {
   @include for-phone-only {
     flex-direction: column;
   }
-
-  &-column {
-    flex-basis: 48%;
-
-    &--wide {
-      flex-basis: 52%;
-    }
-  }
 }
 
 a {
@@ -161,4 +153,12 @@ abbr {
 
 .root abbr[title] {
   text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
 }

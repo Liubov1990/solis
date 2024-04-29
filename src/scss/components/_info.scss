@@ -18,6 +18,14 @@
     @include for-tablet-landscape-down {
       gap: 12px;
     }
+
+    &-column {
+      flex-basis: 48%;
+
+      &--wide {
+        flex-basis: 52%;
+      }
+    }
   }
 
   &__statistics {
