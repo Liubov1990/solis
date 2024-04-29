@@ -3,17 +3,20 @@
 .info {
   @include flex(column, center, center);
   background: transparent;
+  padding-bottom: 120px;
+  @include for-tablet-landscape-down {
+    padding-bottom: 58px;
+  }
 
   &__text-block {
     padding-top: 45px;
     padding-bottom: 4px;
-    margin-bottom: 45px;
     @include for-tablet-landscape-down {
       gap: 32px;
       margin-bottom: 0;
     }
     @include for-tablet-landscape-down {
-      gap: 13px;
+      gap: 12px;
     }
   }
 
@@ -86,7 +89,7 @@
     }
 
     &-label {
-      @include fonts();
+      @include fonts($w-spacing: 0.06em);
       margin-bottom: 40px;
       @include for-tablet-landscape-down {
         margin-bottom: 19px;
@@ -101,8 +104,8 @@
   }
 
   &__about-text {
-    padding-right: 15px;
-    margin-top: 0;
+    padding-right: 5px;
+    margin-top: 1px;
     margin-bottom: 30px;
     @include for-phone-only {
       padding-right: 0;

@@ -48,6 +48,7 @@ body {
 
 .text {
   @include responsive-font(16, 18);
+  word-spacing: 0.06em;
   @include for-laptop-up {
     font-size: 1.125rem;
   }
@@ -69,16 +70,17 @@ body {
 
 .bg-picture {
   @include width-height($full-width);
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: -100;
+
+  &--root {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -100;
+  }
 
   &--half-width {
     @include width-height(47.4%);
-    left: 15px;
-    z-index: -50;
     @include for-tablet-landscape-down {
       display: none;
     }
@@ -101,28 +103,24 @@ body {
   margin: 0;
 }
 
-.section {
-  padding-bottom: 120px;
-  @include for-phone-only {
-    padding-bottom: 58px;
-  }
-}
-
-.section__inner {
-  @include flex(row-reverse, center);
+.section-inner {
+  @include flex();
   @include width-height($full-width);
   position: relative;
 }
 
-.section__text-block {
-  @include flex($justification: space-between);
+.section-text-block {
+  @include flex();
   @include width-height($full-width);
+  position: absolute;
+  right: 15px;
   max-width: 770px;
   background: $white-color;
   opacity: 0.9;
   margin-top: 45px;
   box-sizing: border-box;
   @include for-tablet-landscape-down {
+    position: static;
     max-width: 100%;
     margin-top: 0;
   }
