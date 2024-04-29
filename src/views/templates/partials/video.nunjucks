@@ -1,0 +1,21 @@
+<section class="video">
+  <div class="container video__inner">
+    <div class="video__tablet">
+      <iframe
+        src="https://www.youtube.com/embed/vnbN9V_2Guk"
+        title="abstract building  1cokeklh  D"
+        allowfullscreen
+        width="870"
+        height="539"
+      ></iframe>
+      <h2 class="heading">
+        A <i class="accent">powerful <abbr title="Application Programming Interface">API</abbr></i
+        >, easy to use user interface
+      </h2>
+      <p class="text">
+        Our <abbr title="Application Programming Interface">API</abbr> allows all members to interact with Stablehouse’s
+        platform, from effecting transfers to deposits, withdrawals, creation and redemption and reporting.
+      </p>
+    </div>
+  </div>
+</section>
