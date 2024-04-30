@@ -6,7 +6,7 @@
       <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/features-bg.png" />
       <img
         src="./src/assets/images/laptop/png/features-bg.png"
-        alt="Perspective of many-storeyed buildings rising into the misty sky"
+        alt="Black-and-grey long abstract geometrical blocks"
         class="bg-image bg-image--no-responsive"
       />
     </picture>
