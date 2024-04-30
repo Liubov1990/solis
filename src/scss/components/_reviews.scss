@@ -2,6 +2,10 @@
 
 .reviews {
   @include flex(column, center);
+  padding-bottom: 98px;
+  @include for-tablet-landscape-down {
+    padding-bottom: 62px;
+  }
 
   &__inner {
     @include flex(column);
@@ -10,10 +14,8 @@
 
   &__heading {
     margin-bottom: 2px;
-    word-spacing: 0.625rem;
     @include for-phone-only {
       margin-bottom: 3px;
-      word-spacing: 0.5rem;
     }
   }
 
@@ -51,6 +53,7 @@
       min-width: 370px;
 
       @include for-phone-only {
+        max-width: 343px;
         min-width: 343px;
       }
     }
@@ -66,12 +69,18 @@
     bottom: 0;
     z-index: 10;
     background: #191c2999;
-    padding: 30px 40px;
+    padding: 29px 40px 31px;
     box-sizing: border-box;
   }
 
   &__overlay-text {
-    @include fonts($f-size: 1rem, $f-weight: $fw-regular, $l-height: 1.625, $color: $white-color);
+    @include fonts(
+      $f-size: 1rem,
+      $f-weight: $fw-regular,
+      $l-height: 1.625,
+      $w-spacing: 0.0313em,
+      $color: rgb(255, 255, 255, 0.8)
+    );
     margin-top: 0;
   }
 }

@@ -1,6 +1,6 @@
 <section class="reviews">
   <div class="container reviews__inner">
-    <h2 class="heading reviews__heading">Client <i class="accent"> reviews</i></h2>
+    <h2 class="heading heading--w-spacing reviews__heading">Client <i class="accent"> reviews</i></h2>
     <p class="text reviews__text">
       Happy clients, happy us. Read our client reviews about the work process and results.
     </p>
@@ -9,32 +9,40 @@
         <picture class="bg-picture reviews__bg-picture">
           <source
             type="image/avif"
-            media="(min-width: 900px)"
+            media="(min-width: 56.25rem)"
             srcset="./src/assets/images/laptop/avif/review-bg-1.avif"
           />
           <source
             type="image/avif"
-            media="(max-width: 899px)"
+            media="(max-width: 56.1875rem)"
             srcset="./src/assets/images/mobile/avif/review-bg-1.avif"
           />
 
           <source
             type="image/webp"
-            media="(min-width: 900px)"
+            media="(min-width: 56.25rem)"
             srcset="./src/assets/images/laptop/webp/review-bg-1.webp"
           />
           <source
             type="image/webp"
-            media="(max-width: 899px)"
+            media="(max-width: 56.1875rem)"
             srcset="./src/assets/images/mobile/webp/review-bg-1.webp"
           />
 
-          <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/review-bg-1.png" />
-          <source type="image/png" media="(max-width: 899px)" srcset="./src/assets/images/mobile/png/review-bg-1.png" />
+          <source
+            type="image/png"
+            media="(min-width: 56.25rem)"
+            srcset="./src/assets/images/laptop/png/review-bg-1.png"
+          />
+          <source
+            type="image/png"
+            media="(max-width: 56.1875rem)"
+            srcset="./src/assets/images/mobile/png/review-bg-1.png"
+          />
 
           <img
             src="./src/assets/images/laptop/png/review-bg-1.png"
-            alt="Perspective of many-storeyed abstract buildings on white background rising to top"
+            alt="Futuristic holl-way in dark black-and-gray colors with metal balustrade and long lamp through the whole ceiling and standing man in the end of it."
             class="bg-image bg-image--height"
           />
         </picture>
@@ -51,32 +59,40 @@
         <picture class="bg-picture reviews__bg-picture">
           <source
             type="image/avif"
-            media="(min-width: 900px)"
+            media="(min-width: 56.25rem)"
             srcset="./src/assets/images/laptop/avif/review-bg-2.avif"
           />
           <source
             type="image/avif"
-            media="(max-width: 899px)"
+            media="(max-width: 56.1875rem)"
             srcset="./src/assets/images/mobile/avif/review-bg-2.avif"
           />
 
           <source
             type="image/webp"
-            media="(min-width: 900px)"
+            media="(min-width: 56.25rem)"
             srcset="./src/assets/images/laptop/webp/review-bg-2.webp"
           />
           <source
             type="image/webp"
-            media="(max-width: 899px)"
+            media="(max-width: 56.1875rem)"
             srcset="./src/assets/images/mobile/webp/review-bg-2.webp"
           />
 
-          <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/review-bg-2.png" />
-          <source type="image/png" media="(max-width: 899px)" srcset="./src/assets/images/mobile/png/review-bg-2.png" />
+          <source
+            type="image/png"
+            media="(min-width: 56.25rem)"
+            srcset="./src/assets/images/laptop/png/review-bg-2.png"
+          />
+          <source
+            type="image/png"
+            media="(max-width: 56.1875rem)"
+            srcset="./src/assets/images/mobile/png/review-bg-2.png"
+          />
 
           <img
             src="./src/assets/images/laptop/png/review-bg-2.png"
-            alt="Perspective of many-storeyed abstract buildings on white background rising to top"
+            alt="Part of the modern interior with focus on the glass rounded square-segmented ceiling."
             class="bg-image bg-image--height"
           />
         </picture>
@@ -93,32 +109,40 @@
         <picture class="bg-picture reviews__bg-picture">
           <source
             type="image/avif"
-            media="(min-width: 900px)"
+            media="(min-width: 56.25rem)"
             srcset="./src/assets/images/laptop/avif/review-bg-3.avif"
           />
           <source
             type="image/avif"
-            media="(max-width: 899px)"
+            media="(max-width: 56.1875rem)"
             srcset="./src/assets/images/mobile/avif/review-bg-3.avif"
           />
 
           <source
             type="image/webp"
-            media="(min-width: 900px)"
+            media="(min-width: 56.25rem)"
             srcset="./src/assets/images/laptop/webp/review-bg-3.webp"
           />
           <source
             type="image/webp"
-            media="(max-width: 899px)"
+            media="(max-width: 56.1875rem)"
             srcset="./src/assets/images/mobile/webp/review-bg-3.webp"
           />
 
-          <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/review-bg-3.png" />
-          <source type="image/png" media="(max-width: 899px)" srcset="./src/assets/images/mobile/png/review-bg-3.png" />
+          <source
+            type="image/png"
+            media="(min-width: 56.25rem)"
+            srcset="./src/assets/images/laptop/png/review-bg-3.png"
+          />
+          <source
+            type="image/png"
+            media="(max-width: 56.1875rem)"
+            srcset="./src/assets/images/mobile/png/review-bg-3.png"
+          />
 
           <img
             src="./src/assets/images/laptop/png/review-bg-2.png"
-            alt="Perspective of many-storeyed abstract buildings on white background rising to top"
+            alt="Modern many-storeyed buildings with glass exterior, situated as square, an infinetly reflecting sky within it."
             class="bg-image bg-image--height"
           />
         </picture>

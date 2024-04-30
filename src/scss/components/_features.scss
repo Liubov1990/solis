@@ -42,7 +42,7 @@
   }
 
   &__list-item {
-    @include fonts($l-height: 1.44, $l-spacing: 0.008em);
+    @include fonts($l-height: 1.44, $l-spacing: 0.008em, $color: rgba(38, 42, 63, 0.8));
     @include responsive-font(16, 18);
     margin-bottom: 10px;
     @include for-laptop-up {

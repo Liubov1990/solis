@@ -48,11 +48,19 @@ body {
     font-size: 2.5rem;
     line-height: 1.2;
   }
+
+  &--w-spacing {
+    word-spacing: 0.625rem;
+    @include for-phone-only {
+      word-spacing: 0.5rem;
+    }
+  }
 }
 
 .text {
   @include responsive-font(16, 18);
   word-spacing: 0.06em;
+  color: rgba(38, 42, 63, 0.8);
   @include for-laptop-up {
     font-size: 1.125rem;
   }
@@ -135,12 +143,12 @@ body {
 
 .author {
   @include fonts(
-    $f-family: 'play',
+    $f-family: font('play'),
     $f-style: $fs-italic,
     $f-weight: $fw-regular,
     $f-size: 1.25rem,
     $l-height: 1,
-    $l-spacing: 0.107em,
+    $l-spacing: 0.08em,
     $color: $white-color
   );
   display: block;
