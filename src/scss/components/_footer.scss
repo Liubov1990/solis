@@ -1,0 +1,61 @@
+@use './../abstracts' as *;
+
+.footer {
+  @include flex(column, center);
+
+  &,
+  &__container,
+  &__inner {
+    @include width-height($full-width);
+  }
+
+  &__inner {
+    @include flex($justification: space-between);
+    padding: 11px 0;
+    @include for-tablet-portrait-down {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 14px;
+    }
+  }
+
+  &__info {
+    @include for-tablet-portrait-down {
+      margin-bottom: 0px;
+      margin-top: 15px;
+    }
+  }
+
+  &__small {
+    @include fonts($f-size: 0.875rem, $l-height: 1.857, $l-spacing: 0.008em, $color: rgba(38, 42, 63, 0.6));
+
+    &--mr {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    @include fonts(
+      $f-weight: $fw-regular,
+      $f-size: 0.875rem,
+      $l-height: 1.5,
+      $l-spacing: 0.08em,
+      $color: $main-text-color
+    );
+    transition: color 0.5s ease;
+
+    &:hover,
+    &:active {
+      color: $coral-color;
+    }
+  }
+
+  &__agreements {
+    @include flex($alignment: center, $justification: space-between);
+    gap: 30px;
+    min-width: 250px;
+    @include for-tablet-portrait-down {
+      margin-top: 17px;
+    }
+  }
+}

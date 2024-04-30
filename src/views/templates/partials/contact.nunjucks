@@ -16,6 +16,5 @@
         <button class="button contact__button" type="submit">SEND REQuest</button>
       </form>
     </div>
-    {% include "./horisontal-rule.nunjucks" %}
   </div>
 </section>
