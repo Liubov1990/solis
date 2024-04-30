@@ -133,6 +133,19 @@ body {
   }
 }
 
+.author {
+  @include fonts(
+    $f-family: 'play',
+    $f-style: $fs-italic,
+    $f-weight: $fw-regular,
+    $f-size: 1.25rem,
+    $l-height: 1,
+    $l-spacing: 0.107em,
+    $color: $white-color
+  );
+  display: block;
+}
+
 a {
   display: inline-block;
   text-decoration: none;

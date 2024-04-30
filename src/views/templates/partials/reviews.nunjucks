@@ -1,10 +1,12 @@
-<section class="revievs">
-  <div class="container revievs__inner">
-    <h2 class="heading">Client <i class="accent">reviews</i></h2>
-    <p class="text">Happy clients, happy us. Read our client reviews about the work process and results.</p>
-    <div class="revievs__block">
-      <div class="revievs__block-item">
-        <picture class="bg-picture revievs__bg-picture">
+<section class="reviews">
+  <div class="container reviews__inner">
+    <h2 class="heading reviews__heading">Client <i class="accent"> reviews</i></h2>
+    <p class="text reviews__text">
+      Happy clients, happy us. Read our client reviews about the work process and results.
+    </p>
+    <div class="reviews__block">
+      <div class="reviews__block-item">
+        <picture class="bg-picture reviews__bg-picture">
           <source
             type="image/avif"
             media="(min-width: 900px)"
@@ -33,20 +35,20 @@
           <img
             src="./src/assets/images/laptop/png/review-bg-1.png"
             alt="Perspective of many-storeyed abstract buildings on white background rising to top"
-            class="bg-image"
+            class="bg-image bg-image--height"
           />
         </picture>
-        <div class="revievs__review-overlay">
-          <p class="revievs__review-text">
+        <div class="reviews__overlay">
+          <p class="reviews__overlay-text">
             Solis did a great job. Whether providing direct development support or giving us the opportunity to make our
             development updates, Solis's web design expertise and support services were top notch! It didn't take long
             to stand up our website, and we were pleased with the design and layout of the graphics and information.
           </p>
-          <span class="revievs__review-author">Dr. Jamika Burge</span>
+          <span class="author">Dr. Jamika Burge</span>
         </div>
       </div>
-      <div class="revievs__block-item">
-        <picture class="bg-picture revievs__bg-picture">
+      <div class="reviews__block-item">
+        <picture class="bg-picture reviews__bg-picture">
           <source
             type="image/avif"
             media="(min-width: 900px)"
@@ -75,20 +77,20 @@
           <img
             src="./src/assets/images/laptop/png/review-bg-2.png"
             alt="Perspective of many-storeyed abstract buildings on white background rising to top"
-            class="bg-image"
+            class="bg-image bg-image--height"
           />
         </picture>
-        <div class="revievs__review-overlay">
-          <p class="revievs__review-text">
+        <div class="reviews__overlay">
+          <p class="reviews__overlay-text">
             Solis is a cutting edge company and knows the importance of excellence. Having been in business for 21
             years, I know when I’ve found a competent professional and more importantly a company with integrity. I
             highly recommend this company and am available for further reference if needed.
           </p>
-          <span class="revievs__review-author">Evie-Rose Prosse</span>
+          <span class="author">Evie-Rose Prosse</span>
         </div>
       </div>
-      <div class="revievs__block-item">
-        <picture class="bg-picture revievs__bg-picture">
+      <div class="reviews__block-item">
+        <picture class="bg-picture reviews__bg-picture">
           <source
             type="image/avif"
             media="(min-width: 900px)"
@@ -117,16 +119,16 @@
           <img
             src="./src/assets/images/laptop/png/review-bg-2.png"
             alt="Perspective of many-storeyed abstract buildings on white background rising to top"
-            class="bg-image"
+            class="bg-image bg-image--height"
           />
         </picture>
-        <div class="revievs__review-overlay">
-          <p class="revievs__review-text">
+        <div class="reviews__overlay">
+          <p class="reviews__overlay-text">
             I can’t say enough about how knowledgeable Toinette Rorie is in the area of Web Development. She indeed is a
             developer and can build a site from scratch. She understands functionality and is great at constructing a
             site that is robust and fully functioning.
           </p>
-          <span class="revievs__review-author">Elvis Mooney</span>
+          <span class="author">Elvis Mooney</span>
         </div>
       </div>
     </div>

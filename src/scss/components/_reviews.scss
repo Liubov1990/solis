@@ -1,0 +1,76 @@
+@use './../abstracts' as *;
+
+.reviews {
+  @include flex(column, center);
+
+  &__inner {
+    @include flex(column);
+    @include width-height($full-width);
+  }
+
+  &__heading {
+    margin-bottom: 2px;
+    word-spacing: 0.625rem;
+    @include for-phone-only {
+      margin-bottom: 3px;
+    }
+  }
+
+  &__text {
+    max-width: 400px;
+  }
+
+  &__block {
+    @include flex($justification: space-between);
+    @include width-height($full-width);
+    width: 100%;
+    gap: 30px;
+    margin-top: 32px;
+    overflow-x: scroll;
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      margin-top: 8px;
+      overflow-x: unset;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    & {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    &-item {
+      @include width-height($full-width);
+      position: relative;
+      min-width: 370px;
+
+      @include for-phone-only {
+        min-width: 343px;
+      }
+    }
+  }
+
+  &__overlay {
+    @include flex(column, $justification: space-between);
+    @include width-height($full-width, $full-height);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: #191c2999;
+    padding: 30px 40px;
+    box-sizing: border-box;
+  }
+
+  &__overlay-text {
+    @include fonts($f-size: 1rem, $f-weight: $fw-regular, $l-height: 1.625, $color: $white-color);
+    margin-top: 0;
+  }
+}

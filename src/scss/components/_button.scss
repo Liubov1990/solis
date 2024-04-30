@@ -26,7 +26,7 @@
     }
   }
 
-  &[text]::after {
+  &::after {
     @include width-height(98%, 13px);
     content: '';
     position: absolute;
@@ -45,6 +45,12 @@
 
     &:hover {
       border-color: $dark-coral-color;
+    }
+
+    &::after {
+      @include width-height(37.5%, 13px);
+      top: 45px;
+      left: 101px;
     }
   }
 }
