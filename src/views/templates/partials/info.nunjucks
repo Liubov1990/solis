@@ -1,5 +1,5 @@
-<div class="section info">
-  <div class="container section__inner info__inner">
+<div class="info">
+  <div class="container section-inner info__inner">
     <picture class="bg-picture bg-picture--half-width">
       <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/statistic-bg.avif" />
       <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/statistic-bg.webp" />
@@ -11,8 +11,8 @@
       />
     </picture>
 
-    <div class="section__text-block info__text-block">
-      <div class="section__text-block-column info__statistics">
+    <div class="section-text-block info__text-block">
+      <div class="info__statistics">
         <div class="info__statistic">
           <div class="info__statistic-value">
             <svg class="info__statistic-icon info__statistic-icon-color">
@@ -36,7 +36,7 @@
           <span class="info__statistic-label">Stablecoins</span>
         </div>
       </div>
-      <div class="section__text-block-column section__text-block-column--wide info__about">
+      <div class="info__about">
         <p class="text info__about-text">
           Solis group is a new venture created with investments from and collaboration with XBTO International, XBTO
           Ventures and Phil Potter, formerly of bitfinex. Stablehouse is intended to launch a first-of-its-kind clearing

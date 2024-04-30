@@ -2,10 +2,14 @@
 
 .benefits {
   @include flex(column, center);
+  padding-bottom: 128px;
+  @include for-tablet-landscape-down {
+    padding-bottom: 68px;
+  }
 
   &__item {
     padding-left: 35px;
-    padding-right: 35px;
+    padding-right: 55px;
     @include for-phone-only {
       padding-left: 0;
       padding-right: 5px;
@@ -25,7 +29,7 @@
     grid-auto-rows: auto;
     gap: 93px 30px;
     @include for-tablet-landscape-down {
-      row-gap: 18px;
+      gap: 18px 10px;
     }
     @include for-tablet-portrait-down {
       grid-template-columns: 1fr;

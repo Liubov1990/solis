@@ -1,4 +1,4 @@
-<div class="section benefits">
+<div class="benefits">
   <div class="container benefits__inner">
     <div class="benefits__item">
       {% include "./horisontal-rule.nunjucks" %}
@@ -29,7 +29,8 @@
         <abbr title="Application Programming Interface">API</abbr> and <i class="accent">integration</i>
       </h2>
       <p class="text benefits__text">
-        Integrate<abbr
+        Integrate
+        <abbr
           title="Over-the-counter (OTC) or off-exchange trading or pink sheet trading is done directly between two parties, without the supervision of an exchange."
           >OTC</abbr
         >

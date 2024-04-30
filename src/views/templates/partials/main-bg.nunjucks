@@ -1,4 +1,4 @@
-<picture class="bg-picture">
+<picture class="bg-picture bg-picture--root">
   <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/bg.avif" />
   <source type="image/avif" media="(max-width: 599px)" srcset="./src/assets/images/mobile/avif/bg.avif" />
   <source type="image/avif" media="(max-width: 899px)" srcset="./src/assets/images/tablet/avif/bg.avif" />

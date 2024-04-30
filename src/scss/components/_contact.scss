@@ -1,0 +1,103 @@
+@use './../abstracts' as *;
+
+.contact {
+  @include flex(column, center);
+
+  &__container {
+    @include width-height($full-width);
+  }
+
+  &__inner {
+    @include flex($justification: space-between);
+    padding-top: 50px;
+    padding-bottom: 101px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 66px;
+    }
+    @include for-tablet-portrait-down {
+      flex-direction: column;
+      justify-content: stretch;
+      gap: 30px;
+      padding-top: 30px;
+    }
+    @include for-phone-only {
+      gap: 15px;
+      padding-top: 17px;
+    }
+  }
+
+  &__block {
+    flex-basis: 470px;
+    @include for-tablet-portrait-down {
+      flex-basis: auto;
+    }
+    &--padding {
+      padding-right: 45px;
+      @include for-tablet-portrait-down {
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__heading {
+    margin-top: 27px;
+    margin-bottom: 25px;
+    @include for-tablet-landscape-down {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    margin-top: 0;
+  }
+
+  &__form {
+    @include flex(column);
+  }
+
+  &__input {
+    @include flex($justification: space-between);
+    width: 100%;
+    color: rgba(38, 42, 63, 0.8);
+    border-bottom: 1px solid rgba(38, 42, 63, 0.1);
+    padding: 10px 10px 11px 0;
+    margin-bottom: 31px;
+    box-sizing: border-box;
+    @include for-phone-only {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__input,
+  &__input::placeholder {
+    @include fonts(
+      $f-family: font('play'),
+      $f-style: $fs-italic,
+      $f-weight: $fw-regular,
+      $f-size: 1.125rem,
+      $l-height: 1.11,
+      $l-spacing: 0.08em
+    );
+  }
+
+  &__input::placeholder {
+    color: rgba(38, 42, 63, 0.5);
+  }
+
+  &__input,
+  &__input:focus {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+  }
+
+  &__button {
+    align-self: flex-start;
+    margin-top: 8px;
+    @include for-phone-only {
+      margin-top: 9px;
+    }
+  }
+}

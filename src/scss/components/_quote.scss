@@ -1,0 +1,76 @@
+@use './../abstracts' as *;
+
+.quote {
+  @include flex(column, center);
+  padding-bottom: 119px;
+  @include for-tablet-landscape-down {
+    padding-bottom: 64px;
+  }
+
+  &__inner {
+    @include width-height($full-width);
+    position: relative;
+    aspect-ratio: 9 / 3;
+    @include for-tablet-landscape-down {
+      aspect-ratio: 9 / 4;
+    }
+    @include for-tablet-portrait-down {
+      aspect-ratio: 9 / 3;
+    }
+  }
+
+  &__bg-picture {
+    position: static;
+    @include for-phone-only {
+    }
+  }
+
+  &__overlay {
+    @include width-height(calc(100% - 32px), $full-height);
+    @include flex(column, $justification: center);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 16px;
+    left: 16px;
+    z-index: 10;
+  }
+
+  &__blockquote {
+    position: relative;
+    max-width: 710px;
+    padding-left: 161px;
+    padding-right: 100px;
+    margin: 0;
+    @include for-tablet-landscape-down {
+      padding-left: 110px;
+      padding-right: 25px;
+    }
+
+    @include for-phone-only {
+      padding-left: 40px;
+    }
+  }
+
+  &__text {
+    @include fonts($f-weight: $fw-regular, $l-spacing: 0.044em, $color: $white-color);
+    @include responsive-font(24, 32);
+    @include responsive-line-height(32, 46);
+    margin-top: 0;
+    margin-bottom: 43px;
+    @include for-laptop-up {
+      font-size: 2rem;
+      line-height: 1.43;
+    }
+    @include for-phone-only {
+      margin-bottom: 41px;
+      margin-top: 8px;
+    }
+  }
+
+  &__footer {
+    @include for-phone-only {
+      max-width: 270px;
+    }
+  }
+}

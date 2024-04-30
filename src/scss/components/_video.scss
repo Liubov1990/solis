@@ -1,0 +1,112 @@
+@use './../abstracts' as *;
+
+.video {
+  @include flex(column, center);
+  padding-bottom: 101px;
+  @include for-tablet-portrait-down {
+    padding-bottom: 51px;
+  }
+
+  &__inner {
+    @include flex(column, center, center);
+    @include width-height($full-width);
+  }
+
+  &__figure {
+    max-width: 970px;
+    margin: 0;
+  }
+
+  &__tablet {
+    border: 1px solid $grey-border-color;
+    border-radius: 31px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 31px 70px 25px 30px;
+    box-sizing: border-box;
+    max-width: 970px;
+    width: 100%;
+    @include for-tablet-portrait-down {
+      padding: 10px 25px 4px 12px;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      background: transparent;
+      border: 1px solid $grey-border-color;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+
+    &::before {
+      @include width-height(13px, 13px);
+      left: 7px;
+      top: calc(50% - 6px);
+      @include for-tablet-portrait-down {
+        width: 4px;
+        height: 4px;
+        left: 2px;
+        top: calc(50% - 2px);
+      }
+    }
+
+    &::after {
+      @include width-height(35px, 35px);
+      right: 13px;
+      top: calc(50% - 18px);
+      @include for-tablet-portrait-down {
+        width: 12px;
+        height: 12px;
+        right: 4px;
+        top: calc(50% - 6px);
+      }
+    }
+  }
+
+  &__screensaver {
+    @include responsive-image();
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 29px 68px 24px 29px;
+    box-sizing: border-box;
+    z-index: 100;
+    // display: none;
+    @include for-tablet-portrait-down {
+      padding: 8px 23px 9px 10px;
+    }
+  }
+
+  &__frame {
+    @include width-height($full-width, $full-height);
+    max-width: 870px;
+    max-height: 538px;
+    aspect-ratio: 16 / 9.89;
+    border: none;
+    box-sizing: border-box;
+    @include for-tablet-portrait-down {
+      aspect-ratio: 16 / 10;
+    }
+  }
+
+  &__figcaption {
+    padding-right: 80px;
+    box-sizing: border-box;
+    @include for-tablet-landscape-down {
+      padding-right: 5px;
+    }
+  }
+
+  &__heading {
+    margin-top: 51px;
+    margin-bottom: 26px;
+    @include for-tablet-landscape-down {
+      margin-top: 24px;
+      margin-bottom: 19px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<section class="video">
+  <div class="container container--small video__inner">
+    <figure class="video__figure">
+      <div class="video__tablet">
+        <iframe
+          src="https://www.youtube.com/embed/vnbN9V_2Guk"
+          title="abstract building 1cokeklh D"
+          allowfullscreen
+          class="video__frame"
+        ></iframe>
+        <picture class="bg-picture video__screensaver">
+          <source
+            type="image/avif"
+            media="(min-width: 900px)"
+            srcset="./src/assets/images/laptop/avif/screensaver.avif"
+          />
+          <source
+            type="image/avif"
+            media="(max-width: 899px)"
+            srcset="./src/assets/images/mobile/avif/screensaver.avif"
+          />
+
+          <source
+            type="image/webp"
+            media="(min-width: 900px)"
+            srcset="./src/assets/images/laptop/webp/screensaver.webp"
+          />
+          <source
+            type="image/webp"
+            media="(max-width: 899px)"
+            srcset="./src/assets/images/mobile/webp/screensaver.webp"
+          />
+
+          <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/screensaver.png" />
+          <source type="image/png" media="(max-width: 899px)" srcset="./src/assets/images/mobile/png/screensaver.png" />
+
+          <img
+            src="./src/assets/images/laptop/png/screensaver.png"
+            alt="Schematic picture of building's interior construction"
+            class="bg-image"
+          />
+        </picture>
+      </div>
+      <figcaption class="video__figcaption">
+        <h2 class="heading video__heading">
+          A <i class="accent">powerful <abbr title="Application Programming Interface">API</abbr></i> , easy to use user
+          interface
+        </h2>
+        <p class="text">
+          Our <abbr title="Application Programming Interface">API</abbr> allows all members to interact with
+          Stablehouse’s platform, from effecting transfers to deposits, withdrawals, creation and redemption and
+          reporting.
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+</section>

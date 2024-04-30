@@ -1,0 +1,31 @@
+<div class="quote">
+  <div class="container quote__inner">
+    <picture class="bg-picture quote__bg-picture">
+      <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/quote-bg.avif" />
+      <source type="image/avif" media="(max-width: 767px)" srcset="./src/assets/images/mobile/avif/quote-bg.avif" />
+
+      <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/quote-bg.webp" />
+      <source type="image/webp" media="(max-width: 767px)" srcset="./src/assets/images/mobile/webp/quote-bg.webp" />
+
+      <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/quote-bg.png" />
+      <source type="image/png" media="(max-width: 767px)" srcset="./src/assets/images/mobile/png/quote-bg.png" />
+
+      <img
+        src="./src/assets/images/laptop/png/quote-bg.png"
+        alt="Black-and-grey long abstract geometrical blocks"
+        class="bg-image"
+      />
+    </picture>
+    <div class="quote__overlay">
+      <blockquote class="quote__blockquote">
+        <p class="quote__text">
+          Solis Group serves as a liquidity nexus that gives stablecoin issuers, holders and exchanges certainty over
+          access and liquidity
+        </p>
+        <footer class="author quote__footer">
+          Lennon Burnett, Solis Group <dfn><abbr title="Chief executive officer">CEO</abbr></dfn>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</div>

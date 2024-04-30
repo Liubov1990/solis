@@ -29,6 +29,10 @@ body {
   max-width: 1202px;
   padding: 0 16px;
   box-sizing: border-box;
+
+  &--small {
+    max-width: 1081px;
+  }
 }
 
 .header,
@@ -44,10 +48,19 @@ body {
     font-size: 2.5rem;
     line-height: 1.2;
   }
+
+  &--w-spacing {
+    word-spacing: 0.625rem;
+    @include for-phone-only {
+      word-spacing: 0.5rem;
+    }
+  }
 }
 
 .text {
   @include responsive-font(16, 18);
+  word-spacing: 0.06em;
+  color: rgba(38, 42, 63, 0.8);
   @include for-laptop-up {
     font-size: 1.125rem;
   }
@@ -69,16 +82,17 @@ body {
 
 .bg-picture {
   @include width-height($full-width);
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: -100;
+
+  &--root {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -100;
+  }
 
   &--half-width {
     @include width-height(47.4%);
-    left: 15px;
-    z-index: -50;
     @include for-tablet-landscape-down {
       display: none;
     }
@@ -101,42 +115,43 @@ body {
   margin: 0;
 }
 
-.section {
-  padding-bottom: 120px;
-  @include for-phone-only {
-    padding-bottom: 58px;
-  }
-}
-
-.section__inner {
-  @include flex(row-reverse, center);
+.section-inner {
+  @include flex();
   @include width-height($full-width);
   position: relative;
 }
 
-.section__text-block {
-  @include flex($justification: space-between);
+.section-text-block {
+  @include flex();
   @include width-height($full-width);
+  position: absolute;
+  right: 15px;
   max-width: 770px;
   background: $white-color;
   opacity: 0.9;
   margin-top: 45px;
   box-sizing: border-box;
   @include for-tablet-landscape-down {
+    position: static;
     max-width: 100%;
     margin-top: 0;
   }
   @include for-phone-only {
     flex-direction: column;
   }
+}
 
-  &-column {
-    flex-basis: 48%;
-
-    &--wide {
-      flex-basis: 52%;
-    }
-  }
+.author {
+  @include fonts(
+    $f-family: font('play'),
+    $f-style: $fs-italic,
+    $f-weight: $fw-regular,
+    $f-size: 1.25rem,
+    $l-height: 1,
+    $l-spacing: 0.08em,
+    $color: $white-color
+  );
+  display: block;
 }
 
 a {
@@ -150,6 +165,7 @@ a:hover,
 a:active,
 a:focus {
   outline: none;
+  cursor: pointer;
 }
 
 dfn,
@@ -159,4 +175,12 @@ abbr {
 
 .root abbr[title] {
   text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
 }
