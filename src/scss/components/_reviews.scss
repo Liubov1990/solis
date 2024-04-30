@@ -13,6 +13,7 @@
     word-spacing: 0.625rem;
     @include for-phone-only {
       margin-bottom: 3px;
+      word-spacing: 0.5rem;
     }
   }
 
