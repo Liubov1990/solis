@@ -59,6 +59,10 @@
       width: 343px;
     }
 
+    &:hover {
+      cursor: pointer;
+    }
+
     &--mocked {
       @include for-phone-only {
         display: none;
