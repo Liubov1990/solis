@@ -6,3 +6,12 @@
     transform: translateX(calc(-400px * 3));
   }
 }
+
+@keyframes gradient {
+  0% {
+    background-position: -250px 0;
+  }
+  100% {
+    background-position: 250px 0;
+  }
+}

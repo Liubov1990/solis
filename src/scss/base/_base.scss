@@ -87,6 +87,10 @@ body {
     $l-height: inherit,
     $color: $mint-color
   );
+  background: -webkit-linear-gradient(150deg, #08332b 1%, $mint-color 48%, $mint-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 20s linear infinite;
 }
 
 .bg-picture {
