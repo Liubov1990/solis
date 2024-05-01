@@ -40,7 +40,7 @@
       $l-spacing: 0.08em,
       $color: $main-text-color
     );
-    transition: color 0.5s ease;
+    @include transition(color 0.5s ease);
 
     &:hover,
     &:active {

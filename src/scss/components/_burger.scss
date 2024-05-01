@@ -2,11 +2,11 @@
 
 .header {
   &__burger {
+    @include transition(opacity 0.5ms ease);
     background: transparent;
     padding: 6.5px 2.5px;
     overflow: visible;
     cursor: pointer;
-    transition: opacity 0.5ms ease;
     display: none;
     @include for-tablet-landscape-down {
       display: inline-block;
@@ -18,9 +18,9 @@
 
     &-box {
       @include width-height(25.5px, 18px);
+      @include transition(transform 0.15s ease);
       position: relative;
       display: inline-block;
-      transition: transform 0.15s ease;
     }
 
     &-inner {
@@ -31,10 +31,10 @@
       &::before,
       &::after {
         @include width-height(24px, 2.8px);
+        @include transition(transform 0.15s ease);
         display: block;
         position: absolute;
         background-color: $black-color;
-        transition: transform 0.15s ease;
       }
 
       &::before,
@@ -53,16 +53,15 @@
   }
 
   &__burger--squeeze &__burger-inner {
-    transition-duration: 0.1s;
-    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    @include transition(0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19));
   }
 
   &__burger--squeeze &__burger-inner::before {
-    transition: top 0.1s 0.14s ease, opacity 0.1s ease;
+    @include transition(top 0.1s 0.14s ease, opacity 0.1s ease);
   }
 
   &__burger--squeeze &__burger-inner::after {
-    transition: bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    @include transition(bottom 0.1s 0.14s ease, transform 0.1s cubic-bezier(0.55, 0.055, 0.675, 0.19));
   }
 
   &__burger--squeeze.is-active &__burger-inner {
@@ -72,15 +71,15 @@
   }
 
   &__burger--squeeze.is-active &__burger-inner::before {
+    @include transition(top 0.1s ease, opacity 0.1s 0.14s ease);
     top: 0;
     opacity: 0;
-    transition: top 0.1s ease, opacity 0.1s 0.14s ease;
   }
 
   &__burger--squeeze.is-active &__burger-inner::after {
+    @include transition(bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1));
     bottom: 0;
     transform: rotate(-90deg);
-    transition: bottom 0.1s ease, transform 0.1s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   &__burger--squeeze.is-active &__burger-box,
