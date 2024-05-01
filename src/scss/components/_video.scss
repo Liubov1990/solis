@@ -69,8 +69,6 @@
 
   &__frame {
     @include width-height($full-width, $full-height);
-    max-height: 538px;
-    aspect-ratio: 16 / 9.9;
     border: none;
     box-sizing: border-box;
     display: none;
@@ -78,8 +76,13 @@
 
   &__screensaver {
     @include responsive-image();
-    max-height: 538px;
     z-index: 1;
+  }
+
+  &__frame,
+  &__screensaver {
+    max-height: 538px;
+    aspect-ratio: 16 / 9.9;
   }
 
   &__frame:hover,
