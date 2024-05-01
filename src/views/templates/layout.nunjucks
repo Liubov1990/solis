@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Solis group presents first-of-its-kind stablecoin clearinghouse - API-enabled centralized platform, which addresses the key issues of inconsistent liquidity, stability and accessibility on the stablecoin market."
+    />
     <link rel="icon" href="./src/assets/images/favicon.ico" />
     <title>Innovative stablecoin clearinghouse | Solis group</title>
 
