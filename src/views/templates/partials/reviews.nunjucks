@@ -4,155 +4,311 @@
     <p class="text reviews__text">
       Happy clients, happy us. Read our client reviews about the work process and results.
     </p>
-    <div class="reviews__block">
-      <div class="reviews__block-item">
-        <picture class="bg-picture reviews__bg-picture">
-          <source
-            type="image/avif"
-            media="(min-width: 56.25rem)"
-            srcset="./src/assets/images/laptop/avif/review-bg-1.avif"
-          />
-          <source
-            type="image/avif"
-            media="(max-width: 56.1875rem)"
-            srcset="./src/assets/images/mobile/avif/review-bg-1.avif"
-          />
+    <div class="reviews__slider">
+      <div class="reviews__slider-block">
+        <div class="reviews__slider-item">
+          <picture class="bg-picture reviews__bg-picture">
+            <source
+              type="image/avif"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/avif/review-bg-1.avif"
+            />
+            <source
+              type="image/avif"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/avif/review-bg-1.avif"
+            />
 
-          <source
-            type="image/webp"
-            media="(min-width: 56.25rem)"
-            srcset="./src/assets/images/laptop/webp/review-bg-1.webp"
-          />
-          <source
-            type="image/webp"
-            media="(max-width: 56.1875rem)"
-            srcset="./src/assets/images/mobile/webp/review-bg-1.webp"
-          />
+            <source
+              type="image/webp"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/webp/review-bg-1.webp"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/webp/review-bg-1.webp"
+            />
 
-          <source
-            type="image/png"
-            media="(min-width: 56.25rem)"
-            srcset="./src/assets/images/laptop/png/review-bg-1.png"
-          />
-          <source
-            type="image/png"
-            media="(max-width: 56.1875rem)"
-            srcset="./src/assets/images/mobile/png/review-bg-1.png"
-          />
+            <source
+              type="image/png"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/png/review-bg-1.png"
+            />
+            <source
+              type="image/png"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/png/review-bg-1.png"
+            />
 
-          <img
-            src="./src/assets/images/laptop/png/review-bg-1.png"
-            alt="Futuristic holl-way in dark black-and-gray colors with metal balustrade and long lamp through the whole ceiling and standing man in the end of it."
-            class="bg-image bg-image--height"
-          />
-        </picture>
-        <div class="reviews__overlay">
-          <p class="reviews__overlay-text">
-            Solis did a great job. Whether providing direct development support or giving us the opportunity to make our
-            development updates, Solis's web design expertise and support services were top notch! It didn't take long
-            to stand up our website, and we were pleased with the design and layout of the graphics and information.
-          </p>
-          <span class="author">Dr. Jamika Burge</span>
+            <img
+              src="./src/assets/images/laptop/png/review-bg-1.png"
+              alt="Futuristic holl-way in dark black-and-gray colors with metal balustrade and long lamp through the whole ceiling and standing man in the end of it."
+              class="bg-image bg-image--height"
+            />
+          </picture>
+          <div class="reviews__overlay">
+            <p class="reviews__overlay-text">
+              Solis did a great job. Whether providing direct development support or giving us the opportunity to make
+              our development updates, Solis's web design expertise and support services were top notch! It didn't take
+              long to stand up our website, and we were pleased with the design and layout of the graphics and
+              information.
+            </p>
+            <span class="author">Dr. Jamika Burge</span>
+          </div>
         </div>
-      </div>
-      <div class="reviews__block-item">
-        <picture class="bg-picture reviews__bg-picture">
-          <source
-            type="image/avif"
-            media="(min-width: 56.25rem)"
-            srcset="./src/assets/images/laptop/avif/review-bg-2.avif"
-          />
-          <source
-            type="image/avif"
-            media="(max-width: 56.1875rem)"
-            srcset="./src/assets/images/mobile/avif/review-bg-2.avif"
-          />
+        <div class="reviews__slider-item">
+          <picture class="bg-picture reviews__bg-picture">
+            <source
+              type="image/avif"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/avif/review-bg-2.avif"
+            />
+            <source
+              type="image/avif"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/avif/review-bg-2.avif"
+            />
 
-          <source
-            type="image/webp"
-            media="(min-width: 56.25rem)"
-            srcset="./src/assets/images/laptop/webp/review-bg-2.webp"
-          />
-          <source
-            type="image/webp"
-            media="(max-width: 56.1875rem)"
-            srcset="./src/assets/images/mobile/webp/review-bg-2.webp"
-          />
+            <source
+              type="image/webp"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/webp/review-bg-2.webp"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/webp/review-bg-2.webp"
+            />
 
-          <source
-            type="image/png"
-            media="(min-width: 56.25rem)"
-            srcset="./src/assets/images/laptop/png/review-bg-2.png"
-          />
-          <source
-            type="image/png"
-            media="(max-width: 56.1875rem)"
-            srcset="./src/assets/images/mobile/png/review-bg-2.png"
-          />
+            <source
+              type="image/png"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/png/review-bg-2.png"
+            />
+            <source
+              type="image/png"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/png/review-bg-2.png"
+            />
 
-          <img
-            src="./src/assets/images/laptop/png/review-bg-2.png"
-            alt="Part of the modern interior with focus on the glass rounded square-segmented ceiling."
-            class="bg-image bg-image--height"
-          />
-        </picture>
-        <div class="reviews__overlay">
-          <p class="reviews__overlay-text">
-            Solis is a cutting edge company and knows the importance of excellence. Having been in business for 21
-            years, I know when I’ve found a competent professional and more importantly a company with integrity. I
-            highly recommend this company and am available for further reference if needed.
-          </p>
-          <span class="author">Evie-Rose Prosse</span>
+            <img
+              src="./src/assets/images/laptop/png/review-bg-2.png"
+              alt="Part of the modern interior with focus on the glass rounded square-segmented ceiling."
+              class="bg-image bg-image--height"
+            />
+          </picture>
+          <div class="reviews__overlay">
+            <p class="reviews__overlay-text">
+              Solis is a cutting edge company and knows the importance of excellence. Having been in business for 21
+              years, I know when I’ve found a competent professional and more importantly a company with integrity. I
+              highly recommend this company and am available for further reference if needed.
+            </p>
+            <span class="author">Evie-Rose Prosse</span>
+          </div>
         </div>
-      </div>
-      <div class="reviews__block-item">
-        <picture class="bg-picture reviews__bg-picture">
-          <source
-            type="image/avif"
-            media="(min-width: 56.25rem)"
-            srcset="./src/assets/images/laptop/avif/review-bg-3.avif"
-          />
-          <source
-            type="image/avif"
-            media="(max-width: 56.1875rem)"
-            srcset="./src/assets/images/mobile/avif/review-bg-3.avif"
-          />
+        <div class="reviews__slider-item">
+          <picture class="bg-picture reviews__bg-picture">
+            <source
+              type="image/avif"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/avif/review-bg-3.avif"
+            />
+            <source
+              type="image/avif"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/avif/review-bg-3.avif"
+            />
 
-          <source
-            type="image/webp"
-            media="(min-width: 56.25rem)"
-            srcset="./src/assets/images/laptop/webp/review-bg-3.webp"
-          />
-          <source
-            type="image/webp"
-            media="(max-width: 56.1875rem)"
-            srcset="./src/assets/images/mobile/webp/review-bg-3.webp"
-          />
+            <source
+              type="image/webp"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/webp/review-bg-3.webp"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/webp/review-bg-3.webp"
+            />
 
-          <source
-            type="image/png"
-            media="(min-width: 56.25rem)"
-            srcset="./src/assets/images/laptop/png/review-bg-3.png"
-          />
-          <source
-            type="image/png"
-            media="(max-width: 56.1875rem)"
-            srcset="./src/assets/images/mobile/png/review-bg-3.png"
-          />
+            <source
+              type="image/png"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/png/review-bg-3.png"
+            />
+            <source
+              type="image/png"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/png/review-bg-3.png"
+            />
 
-          <img
-            src="./src/assets/images/laptop/png/review-bg-2.png"
-            alt="Modern many-storeyed buildings with glass exterior, situated as square, an infinetly reflecting sky within it."
-            class="bg-image bg-image--height"
-          />
-        </picture>
-        <div class="reviews__overlay">
-          <p class="reviews__overlay-text">
-            I can’t say enough about how knowledgeable Toinette Rorie is in the area of Web Development. She indeed is a
-            developer and can build a site from scratch. She understands functionality and is great at constructing a
-            site that is robust and fully functioning.
-          </p>
-          <span class="author">Elvis Mooney</span>
+            <img
+              src="./src/assets/images/laptop/png/review-bg-2.png"
+              alt="Modern many-storeyed buildings with glass exterior, situated as square, an infinetly reflecting sky within it."
+              class="bg-image bg-image--height"
+            />
+          </picture>
+          <div class="reviews__overlay">
+            <p class="reviews__overlay-text">
+              I can’t say enough about how knowledgeable Toinette Rorie is in the area of Web Development. She indeed is
+              a developer and can build a site from scratch. She understands functionality and is great at constructing
+              a site that is robust and fully functioning.
+            </p>
+            <span class="author">Elvis Mooney</span>
+          </div>
+        </div>
+
+        {# Mock more items for slider #}
+        <div class="reviews__slider-item reviews__slider-item--mocked">
+          <picture class="bg-picture reviews__bg-picture">
+            <source
+              type="image/avif"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/avif/review-bg-1.avif"
+            />
+            <source
+              type="image/avif"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/avif/review-bg-1.avif"
+            />
+
+            <source
+              type="image/webp"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/webp/review-bg-1.webp"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/webp/review-bg-1.webp"
+            />
+
+            <source
+              type="image/png"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/png/review-bg-1.png"
+            />
+            <source
+              type="image/png"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/png/review-bg-1.png"
+            />
+
+            <img
+              src="./src/assets/images/laptop/png/review-bg-1.png"
+              alt="Futuristic holl-way in dark black-and-gray colors with metal balustrade and long lamp through the whole ceiling and standing man in the end of it."
+              class="bg-image bg-image--height"
+            />
+          </picture>
+          <div class="reviews__overlay">
+            <p class="reviews__overlay-text">
+              Solis did a great job. Whether providing direct development support or giving us the opportunity to make
+              our development updates, Solis's web design expertise and support services were top notch! It didn't take
+              long to stand up our website, and we were pleased with the design and layout of the graphics and
+              information.
+            </p>
+            <span class="author">Dr. Jamika Burge</span>
+          </div>
+        </div>
+        <div class="reviews__slider-item reviews__slider-item--mocked">
+          <picture class="bg-picture reviews__bg-picture">
+            <source
+              type="image/avif"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/avif/review-bg-2.avif"
+            />
+            <source
+              type="image/avif"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/avif/review-bg-2.avif"
+            />
+
+            <source
+              type="image/webp"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/webp/review-bg-2.webp"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/webp/review-bg-2.webp"
+            />
+
+            <source
+              type="image/png"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/png/review-bg-2.png"
+            />
+            <source
+              type="image/png"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/png/review-bg-2.png"
+            />
+
+            <img
+              src="./src/assets/images/laptop/png/review-bg-2.png"
+              alt="Part of the modern interior with focus on the glass rounded square-segmented ceiling."
+              class="bg-image bg-image--height"
+            />
+          </picture>
+          <div class="reviews__overlay">
+            <p class="reviews__overlay-text">
+              Solis is a cutting edge company and knows the importance of excellence. Having been in business for 21
+              years, I know when I’ve found a competent professional and more importantly a company with integrity. I
+              highly recommend this company and am available for further reference if needed.
+            </p>
+            <span class="author">Evie-Rose Prosse</span>
+          </div>
+        </div>
+        <div class="reviews__slider-item reviews__slider-item--mocked">
+          <picture class="bg-picture reviews__bg-picture">
+            <source
+              type="image/avif"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/avif/review-bg-3.avif"
+            />
+            <source
+              type="image/avif"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/avif/review-bg-3.avif"
+            />
+
+            <source
+              type="image/webp"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/webp/review-bg-3.webp"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/webp/review-bg-3.webp"
+            />
+
+            <source
+              type="image/png"
+              media="(min-width: 56.25rem)"
+              srcset="./src/assets/images/laptop/png/review-bg-3.png"
+            />
+            <source
+              type="image/png"
+              media="(max-width: 56.1875rem)"
+              srcset="./src/assets/images/mobile/png/review-bg-3.png"
+            />
+
+            <img
+              src="./src/assets/images/laptop/png/review-bg-2.png"
+              alt="Modern many-storeyed buildings with glass exterior, situated as square, an infinetly reflecting sky within it."
+              class="bg-image bg-image--height"
+            />
+          </picture>
+          <div class="reviews__overlay">
+            <p class="reviews__overlay-text">
+              I can’t say enough about how knowledgeable Toinette Rorie is in the area of Web Development. She indeed is
+              a developer and can build a site from scratch. She understands functionality and is great at constructing
+              a site that is robust and fully functioning.
+            </p>
+            <span class="author">Elvis Mooney</span>
+          </div>
         </div>
       </div>
     </div>

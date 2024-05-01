@@ -22,38 +22,46 @@
     max-width: 400px;
   }
 
-  &__block {
+  &__slider {
+    @include flex();
+    @include width-height($full-width);
+    overflow: hidden;
+    max-width: 1202px;
+    margin: auto;
+  }
+
+  &__slider-block {
     @include flex($justification: space-between);
     @include width-height($full-width);
-    width: 100%;
+    width: calc(400px * 6);
     gap: 30px;
     margin-top: 32px;
-    overflow-x: scroll;
+    animation: slider 35s linear infinite;
     @include for-phone-only {
       flex-direction: column;
       align-items: center;
       gap: 7px;
       margin-top: 8px;
-      overflow-x: unset;
+      animation: none;
     }
 
-    &::-webkit-scrollbar {
-      display: none;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  &__slider-item {
+    @include width-height($full-width);
+    position: relative;
+    width: 370px;
+    @include for-phone-only {
+      max-width: 343px;
+      width: 343px;
     }
 
-    & {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-
-    &-item {
-      @include width-height($full-width);
-      position: relative;
-      min-width: 370px;
-
+    &--mocked {
       @include for-phone-only {
-        max-width: 343px;
-        min-width: 343px;
+        display: none;
       }
     }
   }
