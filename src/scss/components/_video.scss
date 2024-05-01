@@ -82,6 +82,11 @@
     z-index: 1;
   }
 
+  &__frame:hover,
+  &__screensaver:hover {
+    cursor: pointer;
+  }
+
   &__figcaption {
     padding-right: 80px;
     box-sizing: border-box;
