@@ -1,7 +1,6 @@
 @use './../abstracts' as *;
 
 .reviews {
-  @include flex(column, center);
   padding-bottom: 98px;
   @include for-tablet-landscape-down {
     padding-bottom: 62px;

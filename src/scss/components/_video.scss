@@ -1,7 +1,6 @@
 @use './../abstracts' as *;
 
 .video {
-  @include flex(column, center);
   padding-bottom: 101px;
   @include for-tablet-portrait-down {
     padding-bottom: 51px;

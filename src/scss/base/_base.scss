@@ -16,7 +16,6 @@ body {
 }
 
 .root {
-  @include flex(column, center);
   position: relative;
 }
 
@@ -38,6 +37,16 @@ body {
 .header,
 .footer {
   flex-shrink: 0;
+}
+
+.flex-column-center {
+  @include flex(column, center);
+}
+
+.inner {
+  @include flex();
+  @include width-height($full-width);
+  position: relative;
 }
 
 .heading {
@@ -109,19 +118,7 @@ body {
   }
 }
 
-.horisontal-rule {
-  border: none;
-  border-top: 1px solid $grey-border-color;
-  margin: 0;
-}
-
-.section-inner {
-  @include flex();
-  @include width-height($full-width);
-  position: relative;
-}
-
-.section-text-block {
+.text-block {
   @include flex();
   @include width-height($full-width);
   position: absolute;
@@ -152,6 +149,12 @@ body {
     $color: $white-color
   );
   display: block;
+}
+
+.horisontal-rule {
+  border: none;
+  border-top: 1px solid $grey-border-color;
+  margin: 0;
 }
 
 a {

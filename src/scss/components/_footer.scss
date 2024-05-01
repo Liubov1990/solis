@@ -1,8 +1,6 @@
 @use './../abstracts' as *;
 
 .footer {
-  @include flex(column, center);
-
   &,
   &__container,
   &__inner {

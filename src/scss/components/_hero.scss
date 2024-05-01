@@ -1,7 +1,6 @@
 @use './../abstracts' as *;
 
 .hero {
-  @include flex(column, center);
   padding-top: 121px;
   padding-bottom: 153px;
   @include for-tablet-landscape-down {

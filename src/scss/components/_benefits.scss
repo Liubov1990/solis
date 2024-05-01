@@ -1,7 +1,6 @@
 @use './../abstracts' as *;
 
 .benefits {
-  @include flex(column, center);
   padding-bottom: 128px;
   @include for-tablet-landscape-down {
     padding-bottom: 68px;

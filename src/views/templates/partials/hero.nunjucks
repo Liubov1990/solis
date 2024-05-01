@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="flex-column-center hero">
   <div class="container hero__inner">
     <h1 class="hero__heading">A peer-to-peer stablecoin <i class="accent">clearinghouse</i> for the new economy</h1>
     <p class="hero__text">We are bringing real solutions to the payments world by leveraging public blockchains.</p>

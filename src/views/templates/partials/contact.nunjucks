@@ -1,4 +1,4 @@
-<section class="contact">
+<section class="flex-column-center contact">
   <div class="container contact__container">
     {% include "./horisontal-rule.nunjucks" %}
     <div class="contact__inner">

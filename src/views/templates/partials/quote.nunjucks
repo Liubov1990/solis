@@ -1,4 +1,4 @@
-<div class="quote">
+<div class="flex-column-center quote">
   <div class="container quote__inner">
     <picture class="bg-picture quote__bg-picture">
       <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/quote-bg.avif" />

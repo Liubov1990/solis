@@ -1,8 +1,6 @@
 @use './../abstracts' as *;
 
 .contact {
-  @include flex(column, center);
-
   &__container {
     @include width-height($full-width);
   }

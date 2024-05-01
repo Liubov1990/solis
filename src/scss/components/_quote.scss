@@ -1,7 +1,6 @@
 @use './../abstracts' as *;
 
 .quote {
-  @include flex(column, center);
   padding-bottom: 119px;
   @include for-tablet-landscape-down {
     padding-bottom: 64px;
