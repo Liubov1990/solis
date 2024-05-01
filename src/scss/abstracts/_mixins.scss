@@ -57,3 +57,7 @@
 @mixin border-radius($radius) {
   border-radius: $radius;
 }
+
+@mixin border($b-width: 1px, $b-style: solid, $-color: $grey-border-color) {
+  border: $b-width $b-style $-color;
+}

@@ -39,9 +39,9 @@
 
   &--bordered {
     @include width-height($full-width, 90px);
+    @include border();
     max-width: 300px;
     text-align: center;
-    border: $button-border;
 
     &:hover {
       border-color: $dark-coral-color;
