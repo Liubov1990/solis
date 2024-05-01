@@ -50,7 +50,7 @@
 
   &__agreements {
     @include flex($alignment: center, $justification: space-between);
-    gap: 30px;
+    gap: 34px;
     min-width: 250px;
     @include for-tablet-portrait-down {
       margin-top: 17px;
