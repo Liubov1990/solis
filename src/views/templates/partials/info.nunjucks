@@ -1,5 +1,6 @@
-<div class="info">
+<section class="info">
   <div class="container inner info__inner">
+    <h2 class="mock-heading">Mock heading</h2>
     <picture class="bg-picture bg-picture--half-width">
       <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/statistic-bg.avif" />
       <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/statistic-bg.webp" />
@@ -51,4 +52,4 @@
       </div>
     </div>
   </div>
-</div>
+</section>

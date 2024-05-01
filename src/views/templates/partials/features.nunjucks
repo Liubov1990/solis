@@ -1,4 +1,4 @@
-<div class="flex-column-center features">
+<section class="flex-column-center features">
   <div class="container inner">
     <picture class="bg-picture bg-picture--half-width">
       <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/features-bg.avif" />
@@ -41,4 +41,4 @@
       <button type="button" class="button button--bordered features__button">JOIN NOW</button>
     </div>
   </div>
-</div>
+</section>

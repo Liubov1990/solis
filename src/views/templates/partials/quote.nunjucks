@@ -1,5 +1,6 @@
-<div class="flex-column-center quote">
+<section class="flex-column-center quote">
   <div class="container quote__inner">
+    <h2 class="mock-heading">Mock heading</h2>
     <picture class="bg-picture quote__bg-picture">
       <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/quote-bg.avif" />
       <source type="image/avif" media="(max-width: 767px)" srcset="./src/assets/images/mobile/avif/quote-bg.avif" />
@@ -28,4 +29,4 @@
       </blockquote>
     </div>
   </div>
-</div>
+</section>
