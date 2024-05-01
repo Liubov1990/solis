@@ -21,10 +21,10 @@
 
   &__tablet {
     @include width-height($full-width);
+    @include border-radius(31px);
     position: relative;
     max-width: 970px;
     max-height: 601px;
-    border-radius: 31px;
     border: 1px solid $grey-border-color;
     padding: 31px 70px 31px 30px;
     box-sizing: border-box;
@@ -34,10 +34,10 @@
 
     &::before,
     &::after {
+      @include border-radius(50%);
       position: absolute;
       content: '';
       background: transparent;
-      border-radius: 50%;
       border: 1px solid $grey-border-color;
       box-sizing: border-box;
     }

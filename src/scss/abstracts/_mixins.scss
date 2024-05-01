@@ -53,3 +53,7 @@
   display: block;
   object-fit: cover;
 }
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
