@@ -47,22 +47,22 @@
     }
 
     @include for-phone-only {
-      padding-left: 40px;
+      padding-left: 39px;
     }
   }
 
   &__text {
-    @include fonts($f-weight: $fw-regular, $l-spacing: 0.044em, $color: $white-color);
+    @include fonts($f-weight: $fw-regular, $l-spacing: 0.043em, $color: $white-color);
     @include responsive-font(24, 32);
     @include responsive-line-height(32, 46);
     margin-top: 0;
-    margin-bottom: 43px;
+    margin-bottom: 41px;
     @include for-laptop-up {
       font-size: 2rem;
       line-height: 1.43;
     }
     @include for-phone-only {
-      margin-bottom: 41px;
+      margin-bottom: 40px;
       margin-top: 8px;
     }
   }
