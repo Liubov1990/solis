@@ -65,6 +65,14 @@
       margin-bottom: 40px;
       margin-top: 8px;
     }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      // background: url(/dist/src/assets/sprite.svg);
+    }
   }
 
   &__footer {
