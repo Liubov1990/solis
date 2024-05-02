@@ -90,18 +90,16 @@
     cursor: pointer;
   }
 
-  &__icon-wrap {
+  &__ripples {
     @include flex($alignment: center, $justification: center);
     @include width-height(120px, 120px);
     @include border-radius(50%);
     position: absolute;
     top: 40%;
     left: calc(50% - 79px);
-    background: $video-play-color;
-    z-index: 100;
     @include for-tablet-landscape-down {
       @include width-height(80px, 80px);
-      left: calc(50% - 59px);
+      left: calc(50% - 60px);
     }
     @include for-tablet-portrait-down {
       left: calc(50% - 46px);
@@ -112,12 +110,43 @@
     }
   }
 
+  &__ripple {
+    @include width-height($full-width, $full-height);
+    @include border-radius(50%);
+    position: absolute;
+    background: $main-text-color;
+    opacity: 0;
+    animation: ripple 3s infinite ease-out;
+
+    &:nth-child(1) {
+      animation-delay: 1s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 2s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 3s;
+    }
+  }
+
+  &__icon-wrap {
+    @include flex($alignment: center, $justification: center);
+    @include width-height(50%, 50%);
+    @include border-radius(50%);
+    position: absolute;
+    background-color: $grey-border-color;
+    // background: transparent;
+    z-index: 100;
+  }
+
   &__icon {
     @include width-height(33px, 46px);
     transform: translateX(5px);
     @include for-tablet-landscape-down {
       @include width-height(22px, 24px);
-      transform: translateX(4px);
+      transform: translateX(3px);
     }
     @include for-phone-only {
       @include width-height(11px, 12px);
