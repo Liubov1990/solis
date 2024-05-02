@@ -10,6 +10,8 @@
   "scripts": {
     "dev": "npm run clean && gulp",
     "build": "npm run clean && gulp build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "clean": "rimraf dist"
   },
   "repository": {
@@ -26,11 +28,12 @@
   "bugs": {
     "url": "https://github.com/Liubov1990/solis/issues"
   },
-  "homepage": "https://github.com/Liubov1990/solis#readme",
+  "homepage": "https://github.com/Liubov1990/solis",
   "devDependencies": {
     "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.24.4",
     "browser-sync": "^3.0.2",
+    "gh-pages": "^6.1.1",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^9.0.0",
     "gulp-babel": "^8.0.0",

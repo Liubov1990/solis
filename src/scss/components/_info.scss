@@ -21,7 +21,6 @@
   }
 
   &__statistics {
-    @include flex(column, center);
     flex-basis: 48%;
     gap: 40px;
     @include for-tablet-landscape-down {
@@ -90,7 +89,7 @@
     }
 
     &-label {
-      @include fonts($w-spacing: 0.06em, $color: rgba(38, 42, 63, 0.8));
+      @include fonts($w-spacing: 0.06em, $color: $main-text-color-rgba-08);
       margin-bottom: 40px;
       @include for-tablet-landscape-down {
         margin-bottom: 19px;

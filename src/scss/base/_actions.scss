@@ -9,3 +9,13 @@
     --fill-logo-color: #{$black-color};
   }
 }
+
+.root:has(.video__tablet:hover) {
+  .video__screensaver {
+    display: none;
+  }
+
+  .video__frame {
+    display: block;
+  }
+}

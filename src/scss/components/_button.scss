@@ -10,47 +10,43 @@
     $t-transform: uppercase,
     $color: $coral-color
   );
-  position: relative;
+  @include transition(all 0.5s ease);
+  text-align: center;
   background: transparent;
   border: none;
   padding-inline: 0;
   box-sizing: border-box;
   cursor: pointer;
-  transition: all 0.5s ease;
 
   &:hover {
     color: $dark-coral-color;
 
-    &::after {
-      color: $dark-coral-color;
+    .button__text::after {
+      background: $dark-coral-color-rgba-03;
     }
-  }
-
-  &::after {
-    @include width-height(98%, 13px);
-    content: '';
-    position: absolute;
-    top: 11px;
-    left: 10px;
-    background: $coral-color;
-    opacity: 0.3;
-    z-index: -1;
   }
 
   &--bordered {
     @include width-height($full-width, 90px);
+    @include border();
     max-width: 300px;
-    text-align: center;
-    border: $button-border;
 
     &:hover {
       border-color: $dark-coral-color;
     }
+  }
+
+  &__text {
+    position: relative;
 
     &::after {
-      @include width-height(37.5%, 13px);
-      top: 45px;
-      left: 101px;
+      @include width-height(98%, 13px);
+      @include transition(all 0.5s ease);
+      content: '';
+      position: absolute;
+      top: 13px;
+      left: 10px;
+      background: $coral-color-rgba-03;
     }
   }
 }

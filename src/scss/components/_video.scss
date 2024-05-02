@@ -1,10 +1,12 @@
 @use './../abstracts' as *;
 
 .video {
-  @include flex(column, center);
   padding-bottom: 101px;
+  @include for-tablet-landscape-down {
+    padding-bottom: 80px;
+  }
   @include for-tablet-portrait-down {
-    padding-bottom: 51px;
+    padding-bottom: 50px;
   }
 
   &__inner {
@@ -18,25 +20,25 @@
   }
 
   &__tablet {
-    border: 1px solid $grey-border-color;
-    border-radius: 31px;
+    @include width-height($full-width);
+    @include border();
+    @include border-radius(31px);
     position: relative;
-    box-sizing: border-box;
-    padding: 31px 70px 25px 30px;
-    box-sizing: border-box;
     max-width: 970px;
-    width: 100%;
+    max-height: 601px;
+    padding: 31px 70px 31px 30px;
+    box-sizing: border-box;
     @include for-tablet-portrait-down {
-      padding: 10px 25px 4px 12px;
+      padding: 11px 25px 12px 12px;
     }
 
     &::before,
     &::after {
+      @include border();
+      @include border-radius(50%);
       position: absolute;
       content: '';
       background: transparent;
-      border: 1px solid $grey-border-color;
-      border-radius: 50%;
       box-sizing: border-box;
     }
 
@@ -65,32 +67,95 @@
     }
   }
 
+  &__frame {
+    @include width-height($full-width, $full-height);
+    border: none;
+    box-sizing: border-box;
+    display: none;
+  }
+
   &__screensaver {
     @include responsive-image();
+    z-index: 1;
+  }
+
+  &__frame,
+  &__screensaver {
+    max-height: 538px;
+    aspect-ratio: 16 / 9.9;
+  }
+
+  &__frame:hover,
+  &__screensaver:hover {
+    cursor: pointer;
+  }
+
+  &__ripples {
+    @include flex($alignment: center, $justification: center);
+    @include width-height(120px, 120px);
+    @include border-radius(50%);
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 29px 68px 24px 29px;
-    box-sizing: border-box;
-    z-index: 100;
-    // display: none;
+    top: 40%;
+    left: calc(50% - 79px);
+    @include for-tablet-landscape-down {
+      @include width-height(80px, 80px);
+      left: calc(50% - 60px);
+    }
     @include for-tablet-portrait-down {
-      padding: 8px 23px 9px 10px;
+      left: calc(50% - 46px);
+    }
+    @include for-phone-only {
+      @include width-height(42px, 42px);
+      left: calc(50% - 28px);
     }
   }
 
-  &__frame {
+  &__ripple {
     @include width-height($full-width, $full-height);
-    max-width: 870px;
-    max-height: 538px;
-    aspect-ratio: 16 / 9.89;
-    border: none;
-    box-sizing: border-box;
-    @include for-tablet-portrait-down {
-      aspect-ratio: 16 / 10;
+    @include border-radius(50%);
+    position: absolute;
+    background: $main-text-color;
+    opacity: 0;
+    animation: ripple 3s infinite ease-out;
+
+    &:nth-child(1) {
+      animation-delay: 1s;
     }
+
+    &:nth-child(2) {
+      animation-delay: 2s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 3s;
+    }
+  }
+
+  &__icon-wrap {
+    @include flex($alignment: center, $justification: center);
+    @include width-height(50%, 50%);
+    @include border-radius(50%);
+    position: absolute;
+    background-color: $grey-border-color;
+    // background: transparent;
+    z-index: 100;
+  }
+
+  &__icon {
+    @include width-height(33px, 46px);
+    transform: translateX(5px);
+    @include for-tablet-landscape-down {
+      @include width-height(22px, 24px);
+      transform: translateX(3px);
+    }
+    @include for-phone-only {
+      @include width-height(11px, 12px);
+      transform: translateX(2px);
+    }
+  }
+
+  &__icon-color {
+    --fill-polygon-color: #{$main-text-color};
   }
 
   &__figcaption {

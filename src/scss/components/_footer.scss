@@ -1,8 +1,6 @@
 @use './../abstracts' as *;
 
 .footer {
-  @include flex(column, center);
-
   &,
   &__container,
   &__inner {
@@ -27,7 +25,7 @@
   }
 
   &__small {
-    @include fonts($f-size: 0.875rem, $l-height: 1.857, $l-spacing: 0.008em, $color: rgba(38, 42, 63, 0.6));
+    @include fonts($f-size: 0.875rem, $l-height: 1.857, $l-spacing: 0.008em, $color: $main-text-color-rgba-06);
 
     &--mr {
       margin-right: 10px;
@@ -42,7 +40,7 @@
       $l-spacing: 0.08em,
       $color: $main-text-color
     );
-    transition: color 0.5s ease;
+    @include transition(color 0.5s ease);
 
     &:hover,
     &:active {
@@ -52,7 +50,7 @@
 
   &__agreements {
     @include flex($alignment: center, $justification: space-between);
-    gap: 30px;
+    gap: 34px;
     min-width: 250px;
     @include for-tablet-portrait-down {
       margin-top: 17px;

@@ -1,5 +1,6 @@
-<div class="info">
-  <div class="container section-inner info__inner">
+<section class="info">
+  <div class="container inner info__inner">
+    <h2 class="mock-heading">Mock heading</h2>
     <picture class="bg-picture bg-picture--half-width">
       <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/statistic-bg.avif" />
       <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/statistic-bg.webp" />
@@ -11,8 +12,8 @@
       />
     </picture>
 
-    <div class="section-text-block info__text-block">
-      <div class="info__statistics">
+    <div class="text-block info__text-block">
+      <div class="flex-column-center info__statistics">
         <div class="info__statistic">
           <div class="info__statistic-value">
             <svg class="info__statistic-icon info__statistic-icon-color">
@@ -47,8 +48,8 @@
           >-enabled, centralized platform addresses the key issues of inconsistent liquidity, stability and
           accessibility which are currently preventing the stablecoin market from reaching critical mass.
         </p>
-        <button type="button" class="button">Contact sales</button>
+        <button type="button" class="button"><span class="button__text">Contact sales</span></button>
       </div>
     </div>
   </div>
-</div>
+</section>

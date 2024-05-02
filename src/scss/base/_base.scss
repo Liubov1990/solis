@@ -16,7 +16,6 @@ body {
 }
 
 .root {
-  @include flex(column, center);
   position: relative;
 }
 
@@ -40,6 +39,16 @@ body {
   flex-shrink: 0;
 }
 
+.flex-column-center {
+  @include flex(column, center);
+}
+
+.inner {
+  @include flex();
+  @include width-height($full-width);
+  position: relative;
+}
+
 .heading {
   @include fonts($f-family: font('play'), $f-weight: $fw-regular);
   @include responsive-font(32, 40);
@@ -60,7 +69,7 @@ body {
 .text {
   @include responsive-font(16, 18);
   word-spacing: 0.06em;
-  color: rgba(38, 42, 63, 0.8);
+  color: $main-text-color-rgba-08;
   @include for-laptop-up {
     font-size: 1.125rem;
   }
@@ -78,6 +87,12 @@ body {
     $l-height: inherit,
     $color: $mint-color
   );
+  background: $text-linear-background;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 250px;
+  animation: gradient 5s linear infinite;
 }
 
 .bg-picture {
@@ -109,26 +124,13 @@ body {
   }
 }
 
-.horisontal-rule {
-  border: none;
-  border-top: 1px solid $grey-border-color;
-  margin: 0;
-}
-
-.section-inner {
-  @include flex();
-  @include width-height($full-width);
-  position: relative;
-}
-
-.section-text-block {
+.text-block {
   @include flex();
   @include width-height($full-width);
   position: absolute;
   right: 15px;
-  max-width: 770px;
-  background: $white-color;
-  opacity: 0.9;
+  max-width: 771px;
+  background: $white-color-rgba-09;
   margin-top: 45px;
   box-sizing: border-box;
   @include for-tablet-landscape-down {
@@ -154,6 +156,16 @@ body {
   display: block;
 }
 
+.horisontal-rule {
+  border: none;
+  border-top: 1px solid $grey-border-color;
+  margin: 0;
+}
+
+.mock-heading {
+  display: none;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -171,6 +183,10 @@ a:focus {
 dfn,
 abbr {
   font-style: inherit;
+}
+
+.strong {
+  font-weight: inherit;
 }
 
 .root abbr[title] {

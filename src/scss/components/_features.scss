@@ -1,7 +1,6 @@
 @use './../abstracts' as *;
 
 .features {
-  @include flex(column, center);
   padding-bottom: 88px;
   @include for-tablet-landscape-down {
     padding-bottom: 38px;
@@ -42,7 +41,7 @@
   }
 
   &__list-item {
-    @include fonts($l-height: 1.44, $l-spacing: 0.008em, $color: rgba(38, 42, 63, 0.8));
+    @include fonts($l-height: 1.44, $l-spacing: 0.008em, $color: $main-text-color-rgba-08);
     @include responsive-font(16, 18);
     margin-bottom: 10px;
     @include for-laptop-up {

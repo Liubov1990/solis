@@ -1,7 +1,6 @@
 @use './../abstracts' as *;
 
 .reviews {
-  @include flex(column, center);
   padding-bottom: 98px;
   @include for-tablet-landscape-down {
     padding-bottom: 62px;
@@ -15,7 +14,7 @@
   &__heading {
     margin-bottom: 2px;
     @include for-phone-only {
-      margin-bottom: 3px;
+      margin-bottom: 4px;
     }
   }
 
@@ -23,38 +22,50 @@
     max-width: 400px;
   }
 
-  &__block {
+  &__slider {
+    @include flex();
+    @include width-height($full-width);
+    overflow: hidden;
+    max-width: 1202px;
+    margin: auto;
+  }
+
+  &__slider-block {
     @include flex($justification: space-between);
     @include width-height($full-width);
-    width: 100%;
+    width: calc(400px * 6);
     gap: 30px;
     margin-top: 32px;
-    overflow-x: scroll;
+    animation: slider 35s linear infinite;
     @include for-phone-only {
       flex-direction: column;
       align-items: center;
       gap: 7px;
       margin-top: 8px;
-      overflow-x: unset;
+      animation: none;
     }
 
-    &::-webkit-scrollbar {
-      display: none;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  &__slider-item {
+    @include width-height($full-width);
+    position: relative;
+    width: 370px;
+    @include for-phone-only {
+      max-width: 343px;
+      width: 343px;
     }
 
-    & {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
+    &:hover {
+      cursor: pointer;
     }
 
-    &-item {
-      @include width-height($full-width);
-      position: relative;
-      min-width: 370px;
-
+    &--mocked {
       @include for-phone-only {
-        max-width: 343px;
-        min-width: 343px;
+        display: none;
       }
     }
   }
@@ -68,7 +79,7 @@
     right: 0;
     bottom: 0;
     z-index: 10;
-    background: rgba(25, 28, 41, 0.6);
+    background: $revievs-overlay-color-rgba-06;
     padding: 29px 40px 31px;
     box-sizing: border-box;
   }
@@ -79,7 +90,7 @@
       $f-weight: $fw-regular,
       $l-height: 1.625,
       $w-spacing: 0.0313em,
-      $color: rgba(255, 255, 255, 0.8)
+      $color: $white-color-rgba-08
     );
     margin-top: 0;
   }
