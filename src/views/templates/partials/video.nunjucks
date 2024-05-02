@@ -39,6 +39,11 @@
             alt="Schematic picture of building's interior construction"
             class="bg-image"
           />
+          <div class="video__icon-wrap">
+            <svg class="video__icon video__icon-color">
+              <use xlink:href="./src/assets/sprite.svg#polygon" />
+            </svg>
+          </div>
         </picture>
       </div>
       <figcaption class="video__figcaption">

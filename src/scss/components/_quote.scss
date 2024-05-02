@@ -64,8 +64,8 @@
   }
 
   &__icon-color {
-    --quote-icon-color: #{$transparent};
-    --gradient: #{$coral-color};
+    --fill-quote-color: #{$transparent};
+    --stroke-gradient: #{$coral-color};
     // --gradient: #{$quote-linear-gradient};
   }
 

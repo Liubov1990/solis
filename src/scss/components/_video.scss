@@ -90,6 +90,45 @@
     cursor: pointer;
   }
 
+  &__icon-wrap {
+    @include flex($alignment: center, $justification: center);
+    @include width-height(120px, 120px);
+    @include border-radius(50%);
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 79px);
+    background: $video-play-color;
+    z-index: 100;
+    @include for-tablet-landscape-down {
+      @include width-height(80px, 80px);
+      left: calc(50% - 59px);
+    }
+    @include for-tablet-portrait-down {
+      left: calc(50% - 46px);
+    }
+    @include for-phone-only {
+      @include width-height(42px, 42px);
+      left: calc(50% - 28px);
+    }
+  }
+
+  &__icon {
+    @include width-height(33px, 46px);
+    transform: translateX(5px);
+    @include for-tablet-landscape-down {
+      @include width-height(22px, 24px);
+      transform: translateX(4px);
+    }
+    @include for-phone-only {
+      @include width-height(11px, 12px);
+      transform: translateX(2px);
+    }
+  }
+
+  &__icon-color {
+    --fill-polygon-color: #{$main-text-color};
+  }
+
   &__figcaption {
     padding-right: 80px;
     box-sizing: border-box;
