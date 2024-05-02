@@ -32,7 +32,7 @@
     bottom: 0;
     right: 16px;
     left: 16px;
-    z-index: 10;
+    z-index: 1;
   }
 
   &__blockquote {
@@ -51,6 +51,24 @@
     }
   }
 
+  &__icon {
+    @include width-height(102px, 84px);
+    position: absolute;
+    top: -16%;
+    left: 10.2%;
+    opacity: 0.6;
+    @include for-tablet-landscape-down {
+      top: -11%;
+      left: 6%;
+    }
+  }
+
+  &__icon-color {
+    --quote-icon-color: #{$transparent};
+    --gradient: #{$coral-color};
+    // --gradient: #{$quote-linear-gradient};
+  }
+
   &__text {
     @include fonts($f-weight: $fw-regular, $l-spacing: 0.043em, $color: $white-color);
     @include responsive-font(24, 32);
@@ -64,14 +82,6 @@
     @include for-phone-only {
       margin-bottom: 40px;
       margin-top: 8px;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      // background: url(/dist/src/assets/sprite.svg);
     }
   }
 

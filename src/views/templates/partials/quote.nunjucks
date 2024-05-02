@@ -19,6 +19,9 @@
     </picture>
     <div class="quote__overlay">
       <blockquote class="quote__blockquote">
+        <svg class="quote__icon quote__icon-color">
+          <use xlink:href="./src/assets/sprite.svg#quotes" />
+        </svg>
         <p class="quote__text">
           Solis Group serves as a liquidity nexus that gives stablecoin issuers, holders and exchanges certainty over
           access and liquidity
