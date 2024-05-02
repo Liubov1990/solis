@@ -69,7 +69,7 @@ body {
 .text {
   @include responsive-font(16, 18);
   word-spacing: 0.06em;
-  color: rgba(38, 42, 63, 0.8);
+  color: $main-text-color-rgba-08;
   @include for-laptop-up {
     font-size: 1.125rem;
   }
@@ -87,10 +87,12 @@ body {
     $l-height: inherit,
     $color: $mint-color
   );
-  background: -webkit-linear-gradient(150deg, #08332b 1%, $mint-color 48%, $mint-color 100%);
+  background: $text-linear-background;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradient 20s linear infinite;
+  background-clip: text;
+  background-size: 250px;
+  animation: gradient 5s linear infinite;
 }
 
 .bg-picture {

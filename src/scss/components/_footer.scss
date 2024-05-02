@@ -25,7 +25,7 @@
   }
 
   &__small {
-    @include fonts($f-size: 0.875rem, $l-height: 1.857, $l-spacing: 0.008em, $color: rgba(38, 42, 63, 0.6));
+    @include fonts($f-size: 0.875rem, $l-height: 1.857, $l-spacing: 0.008em, $color: $main-text-color-rgba-06);
 
     &--mr {
       margin-right: 10px;

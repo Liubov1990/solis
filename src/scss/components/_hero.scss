@@ -32,7 +32,7 @@
   }
 
   &__text {
-    @include fonts($l-height: 1.44, $l-spacing: 0.002rem, $w-spacing: 0.055rem, $color: rgba(38, 42, 63, 0.8));
+    @include fonts($l-height: 1.44, $l-spacing: 0.002rem, $w-spacing: 0.055rem, $color: $main-text-color-rgba-08);
     @include responsive-line-height(24, 26);
     max-width: 439px;
     margin-bottom: 48px;

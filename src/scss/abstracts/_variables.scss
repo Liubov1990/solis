@@ -20,12 +20,15 @@ $max-content-width: 1202;
 $full-width: 100%;
 $full-height: 100%;
 
-$linear-background: linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02)),
-  linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.244636) 24.1%,
-    rgba(255, 255, 255, 0) 47.19%
-  );
+$linear-background: linear-gradient(0deg, $white-color-rgba-002, $white-color-rgba-002),
+  linear-gradient(270deg, $white-color-rgba-05 0%, $white-color-rgba-024 24.1%, $white-color-rgba-0 47.19%);
 
-$quote-linear-gradient: linear-gradient(90deg, rgba(241, 137, 123, 0) 0%, $coral-color 100%);
+$text-linear-background: -webkit-linear-gradient(
+  150deg,
+  $mint-color 15%,
+  $dark-green-color 28%,
+  $mint-color 48%,
+  $mint-color 100%
+);
+
+$quote-linear-gradient: linear-gradient(90deg, $coral-color-rgba-0 0%, $coral-color 100%);

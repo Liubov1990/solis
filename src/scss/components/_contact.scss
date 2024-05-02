@@ -57,8 +57,8 @@
   &__input {
     @include flex($justification: space-between);
     width: 100%;
-    color: rgba(38, 42, 63, 0.8);
-    border-bottom: 1px solid rgba(38, 42, 63, 0.1);
+    color: $main-text-color-rgba-08;
+    border-bottom: 1px solid $main-text-color-rgba-01;
     padding: 10px 10px 11px 0;
     margin-bottom: 31px;
     box-sizing: border-box;
@@ -79,7 +79,7 @@
     }
 
     &::placeholder {
-      color: rgba(38, 42, 63, 0.5);
+      color: $main-text-color-rgba-05;
     }
 
     &,
@@ -91,7 +91,7 @@
     }
 
     &:focus {
-      border-bottom-color: rgba(38, 42, 63, 0.5);
+      border-bottom-color: $main-text-color-rgba-05;
     }
   }
 
