@@ -13,7 +13,7 @@
         <input type="text" id="name" name="name" required placeholder="Your name" class="contact__input" />
         <input type="email" id="email" name="email" required placeholder="Email" class="contact__input" />
         <input type="text" id="message" name="message" required placeholder="Tell more" class="contact__input" />
-        <button class="button contact__button" type="submit">SEND REQuest</button>
+        <button class="button contact__button" type="submit"><span class="button__text">SEND REQUEST</span></button>
       </form>
     </div>
   </div>

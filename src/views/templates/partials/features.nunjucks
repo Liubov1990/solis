@@ -38,7 +38,9 @@
           </li>
         </ul>
       </div>
-      <button type="button" class="button button--bordered features__button">JOIN NOW</button>
+      <button type="button" class="button button--bordered features__button">
+        <span class="button__text">JOIN NOW</span>
+      </button>
     </div>
   </div>
 </section>

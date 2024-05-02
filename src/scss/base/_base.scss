@@ -130,8 +130,7 @@ body {
   position: absolute;
   right: 15px;
   max-width: 771px;
-  background: $white-color;
-  opacity: 0.9;
+  background: $white-color-rgba-09;
   margin-top: 45px;
   box-sizing: border-box;
   @include for-tablet-landscape-down {
