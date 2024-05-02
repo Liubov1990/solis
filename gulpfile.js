@@ -7,6 +7,7 @@ import gulpNunjucksRender from 'gulp-nunjucks-render';
 import autoprefixer from 'gulp-autoprefixer';
 import browserSync from 'browser-sync';
 import uglify from 'gulp-uglify';
+import htmlmin from 'gulp-htmlmin';
 import concat from 'gulp-concat';
 import gulpCopy from 'gulp-copy';
 
