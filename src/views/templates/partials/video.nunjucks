@@ -31,11 +31,8 @@
             srcset="./src/assets/images/mobile/webp/screensaver.webp"
           />
 
-          <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/screensaver.png" />
-          <source type="image/png" media="(max-width: 899px)" srcset="./src/assets/images/mobile/png/screensaver.png" />
-
           <img
-            src="./src/assets/images/laptop/png/screensaver.png"
+            src="./src/assets/images/laptop/webp/screensaver.webp"
             alt="Schematic picture of building's interior construction"
             class="bg-image"
           />

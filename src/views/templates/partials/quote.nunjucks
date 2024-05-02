@@ -8,11 +8,8 @@
       <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/quote-bg.webp" />
       <source type="image/webp" media="(max-width: 767px)" srcset="./src/assets/images/mobile/webp/quote-bg.webp" />
 
-      <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/quote-bg.png" />
-      <source type="image/png" media="(max-width: 767px)" srcset="./src/assets/images/mobile/png/quote-bg.png" />
-
       <img
-        src="./src/assets/images/laptop/png/quote-bg.png"
+        src="./src/assets/images/laptop/webp/quote-bg.webp"
         alt="Black-and-grey long abstract geometrical blocks"
         class="bg-image"
       />
