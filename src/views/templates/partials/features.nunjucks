@@ -5,22 +5,22 @@
         type="image/avif"
         media="(min-width: 900px)"
         srcset="./src/assets/images/laptop/avif/features-bg.avif"
-        width="600px"
-        height="540px"
+        width="600"
+        height="540"
       />
       <source
         type="image/webp"
         media="(min-width: 900px)"
         srcset="./src/assets/images/laptop/webp/features-bg.webp"
-        width="600px"
-        height="540px"
+        width="600"
+        height="540"
       />
       <img
         src="./src/assets/images/laptop/webp/features-bg.webp"
         alt="Black-and-grey long abstract geometrical blocks"
         class="bg-image bg-image--no-responsive"
-        width="600px"
-        height="540px"
+        width="600"
+        height="540"
         loading="lazy"
       />
     </picture>
