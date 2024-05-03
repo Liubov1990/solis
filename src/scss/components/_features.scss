@@ -54,7 +54,6 @@
   }
 
   &__button {
-    margin: 0 auto;
     @include for-phone-only {
       max-width: $full-width;
       margin-top: -2px;
