@@ -5,10 +5,17 @@
       <p class="footer__info"><small class="footer__small">&copy; 2020 Solisgroup. All Rights Reserved.</small></p>
       <p class="footer__info">
         <small class="footer__small footer__small--mr">made by</small>
-        <a href="https://zgraya.digital" target="_blank" class="footer__link">Zgraya.digital</a>
+        <a
+          href="https://zgraya.digital"
+          target="_blank"
+          aria-label="Learn more about 'Zgraya.digital'"
+          class="footer__link"
+          >Zgraya.digital</a
+        >
       </p>
       <div class="footer__agreements">
-        <a href="#" class="footer__link">User Agreement</a> <a href="#" class="footer__link">Privacy Policy</a>
+        <a href="#" aria-label="Read User Agreement" class="footer__link">User Agreement</a>
+        <a href="#" aria-label="Read Privacy Policy" class="footer__link">Privacy Policy</a>
       </div>
     </div>
   </div>
