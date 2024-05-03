@@ -40,7 +40,7 @@ body {
 }
 
 .inner {
-  @include flex();
+  @include flex($alignment: center);
   @include width-height($full-width);
   position: relative;
 }
@@ -127,7 +127,6 @@ body {
   right: 15px;
   max-width: 771px;
   background: $white-color-rgba-09;
-  margin-top: 45px;
   box-sizing: border-box;
   @include for-tablet-landscape-down {
     position: static;
