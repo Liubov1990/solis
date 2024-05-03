@@ -1,12 +1,26 @@
 <section class="flex-column-center features">
   <div class="container inner">
     <picture class="bg-picture bg-picture--half-width">
-      <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/features-bg.avif" />
-      <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/features-bg.webp" />
+      <source
+        type="image/avif"
+        media="(min-width: 900px)"
+        srcset="./src/assets/images/laptop/avif/features-bg.avif"
+        width="600px"
+        height="540px"
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 900px)"
+        srcset="./src/assets/images/laptop/webp/features-bg.webp"
+        width="600px"
+        height="540px"
+      />
       <img
         src="./src/assets/images/laptop/webp/features-bg.webp"
         alt="Black-and-grey long abstract geometrical blocks"
         class="bg-image bg-image--no-responsive"
+        width="600px"
+        height="540px"
         loading="lazy"
       />
     </picture>

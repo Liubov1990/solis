@@ -7,33 +7,43 @@
     <div class="reviews__slider">
       <div class="reviews__slider-block">
         <div class="reviews__slider-item">
-          <picture class="bg-picture reviews__bg-picture">
+          <picture class="bg-picture">
             <source
               type="image/avif"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/avif/review-bg-1.avif"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/avif"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/avif/review-bg-1.avif"
+              width="343px"
+              height="340px"
             />
 
             <source
               type="image/webp"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/webp/review-bg-1.webp"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/webp"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/webp/review-bg-1.webp"
+              width="343px"
+              height="340px"
             />
 
             <img
               src="./src/assets/images/laptop/webp/review-bg-1.webp"
               alt="Futuristic holl-way in dark black-and-gray colors with metal balustrade and long lamp through the whole ceiling and standing man in the end of it."
-              class="bg-image bg-image--height"
+              width="370px"
+              height="340px"
+              class="bg-image bg-image--height reviews__bg-image"
               loading="lazy"
             />
           </picture>
@@ -51,30 +61,40 @@
           <picture class="bg-picture reviews__bg-picture">
             <source
               type="image/avif"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/avif/review-bg-2.avif"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/avif"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/avif/review-bg-2.avif"
+              width="343px"
+              height="340px"
             />
 
             <source
               type="image/webp"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/webp/review-bg-2.webp"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/webp"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/webp/review-bg-2.webp"
+              width="343px"
+              height="340px"
             />
 
             <img
               src="./src/assets/images/laptop/webp/review-bg-2.webp"
               alt="Part of the modern interior with focus on the glass rounded square-segmented ceiling."
-              class="bg-image bg-image--height"
+              class="bg-image bg-image--height reviews__bg-image"
+              width="370px"
+              height="340px"
               loading="lazy"
             />
           </picture>
@@ -91,30 +111,40 @@
           <picture class="bg-picture reviews__bg-picture">
             <source
               type="image/avif"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/avif/review-bg-3.avif"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/avif"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/avif/review-bg-3.avif"
+              width="343px"
+              height="340px"
             />
 
             <source
               type="image/webp"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/webp/review-bg-3.webp"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/webp"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/webp/review-bg-3.webp"
+              width="343px"
+              height="340px"
             />
 
             <img
               src="./src/assets/images/laptop/webp/review-bg-2.webp"
               alt="Modern many-storeyed buildings with glass exterior, situated as square, an infinetly reflecting sky within it."
-              class="bg-image bg-image--height"
+              class="bg-image bg-image--height reviews__bg-image"
+              width="370px"
+              height="340px"
               loading="lazy"
             />
           </picture>
@@ -133,30 +163,40 @@
           <picture class="bg-picture reviews__bg-picture">
             <source
               type="image/avif"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/avif/review-bg-1.avif"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/avif"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/avif/review-bg-1.avif"
+              width="343px"
+              height="340px"
             />
 
             <source
               type="image/webp"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/webp/review-bg-1.webp"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/webp"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/webp/review-bg-1.webp"
+              width="343px"
+              height="340px"
             />
 
             <img
               src="./src/assets/images/laptop/webp/review-bg-1.webp"
               alt="Futuristic holl-way in dark black-and-gray colors with metal balustrade and long lamp through the whole ceiling and standing man in the end of it."
-              class="bg-image bg-image--height"
+              class="bg-image bg-image--height reviews__bg-image"
+              width="370px"
+              height="340px"
               loading="lazy"
             />
           </picture>
@@ -174,30 +214,40 @@
           <picture class="bg-picture reviews__bg-picture">
             <source
               type="image/avif"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/avif/review-bg-2.avif"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/avif"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/avif/review-bg-2.avif"
+              width="343px"
+              height="340px"
             />
 
             <source
               type="image/webp"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/webp/review-bg-2.webp"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/webp"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/webp/review-bg-2.webp"
+              width="343px"
+              height="340px"
             />
 
             <img
               src="./src/assets/images/laptop/webp/review-bg-2.webp"
               alt="Part of the modern interior with focus on the glass rounded square-segmented ceiling."
-              class="bg-image bg-image--height"
+              class="bg-image bg-image--height reviews__bg-image"
+              width="370px"
+              height="340px"
               loading="lazy"
             />
           </picture>
@@ -214,30 +264,40 @@
           <picture class="bg-picture reviews__bg-picture">
             <source
               type="image/avif"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/avif/review-bg-3.avif"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/avif"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/avif/review-bg-3.avif"
+              width="343px"
+              height="340px"
             />
 
             <source
               type="image/webp"
-              media="(min-width: 56.25rem)"
+              media="(min-width: 900px)"
               srcset="./src/assets/images/laptop/webp/review-bg-3.webp"
+              width="370px"
+              height="340px"
             />
             <source
               type="image/webp"
-              media="(max-width: 56.1875rem)"
+              media="(max-width: 899px)"
               srcset="./src/assets/images/mobile/webp/review-bg-3.webp"
+              width="343px"
+              height="340px"
             />
 
             <img
               src="./src/assets/images/laptop/webp/review-bg-2.webp"
               alt="Modern many-storeyed buildings with glass exterior, situated as square, an infinetly reflecting sky within it."
-              class="bg-image bg-image--height"
+              class="bg-image bg-image--height reviews__bg-image"
+              width="370px"
+              height="340px"
               loading="lazy"
             />
           </picture>

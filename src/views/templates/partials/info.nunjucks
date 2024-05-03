@@ -2,12 +2,26 @@
   <div class="container inner info__inner">
     <h2 class="mock-heading">Mock heading</h2>
     <picture class="bg-picture bg-picture--half-width">
-      <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/statistic-bg.avif" />
-      <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/statistic-bg.webp" />
+      <source
+        type="image/avif"
+        media="(min-width: 900px)"
+        srcset="./src/assets/images/laptop/avif/statistic-bg.avif"
+        width="570px"
+        height="670px"
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 900px)"
+        srcset="./src/assets/images/laptop/webp/statistic-bg.webp"
+        width="570px"
+        height="670px"
+      />
       <img
         src="./src/assets/images/laptop/webp/statistic-bg.webp"
         alt="Perspective of many-storeyed buildings rising into the misty sky"
         class="bg-image bg-image--no-responsive"
+        width="570px"
+        height="670px"
         loading="lazy"
       />
     </picture>
