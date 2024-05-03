@@ -1,5 +1,5 @@
 <section class="video section">
-  <div class="container container--small video__inner">
+  <div class="container video__inner">
     <figure class="video__figure">
       <div class="video__tablet">
         <iframe
