@@ -7,6 +7,7 @@
         src="./src/assets/images/laptop/webp/features-bg.webp"
         alt="Black-and-grey long abstract geometrical blocks"
         class="bg-image bg-image--no-responsive"
+        loading="lazy"
       />
     </picture>
 

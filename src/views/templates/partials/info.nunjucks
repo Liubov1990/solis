@@ -8,6 +8,7 @@
         src="./src/assets/images/laptop/webp/statistic-bg.webp"
         alt="Perspective of many-storeyed buildings rising into the misty sky"
         class="bg-image bg-image--no-responsive"
+        loading="lazy"
       />
     </picture>
 

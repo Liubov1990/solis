@@ -7,6 +7,7 @@
           title="abstract building 1cokeklh D"
           allowfullscreen
           class="video__frame"
+          loading="lazy"
         ></iframe>
         <picture class="bg-picture video__screensaver">
           <source
@@ -35,6 +36,7 @@
             src="./src/assets/images/laptop/webp/screensaver.webp"
             alt="Schematic picture of building's interior construction"
             class="bg-image"
+            loading="lazy"
           />
           <div class="video__ripples">
             <div class="video__ripple"></div>

@@ -10,8 +10,7 @@
   "scripts": {
     "dev": "npm run clean && gulp",
     "build": "npm run clean && gulp build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist",
     "clean": "rimraf dist"
   },
   "repository": {

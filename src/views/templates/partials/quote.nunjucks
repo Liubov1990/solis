@@ -12,6 +12,7 @@
         src="./src/assets/images/laptop/webp/quote-bg.webp"
         alt="Black-and-grey long abstract geometrical blocks"
         class="bg-image"
+        loading="lazy"
       />
     </picture>
     <div class="quote__overlay">
