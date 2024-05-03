@@ -4,11 +4,12 @@
   padding-top: 121px;
   padding-bottom: 153px;
   @include for-tablet-landscape-down {
-    padding-top: 30px;
-    padding-bottom: 53px;
+    padding-bottom: 120px;
+    padding-top: 60px;
   }
   @include for-phone-only {
     padding-top: 244px;
+    padding-bottom: 53px;
   }
 
   &__inner {
