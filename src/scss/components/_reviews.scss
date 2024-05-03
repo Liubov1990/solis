@@ -3,7 +3,7 @@
 .reviews {
   padding-bottom: 98px;
   @include for-tablet-landscape-down {
-    padding-bottom: 62px;
+    padding-bottom: 65px;
   }
 
   &__inner {
@@ -85,13 +85,11 @@
   }
 
   &__overlay-text {
-    @include fonts(
-      $f-size: 1rem,
-      $f-weight: $fw-regular,
-      $l-height: 1.625,
-      $w-spacing: 0.0313em,
-      $color: $white-color-rgba-08
-    );
+    @include fonts($f-size: 1rem, $f-weight: $fw-regular, $w-spacing: 0.0313em, $color: $white-color-rgba-08);
+    @include responsive-line-height(24, 26);
     margin-top: 0;
+    @include for-laptop-up {
+      line-height: 1.625;
+    }
   }
 }
