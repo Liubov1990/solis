@@ -43,6 +43,7 @@ body {
   @include flex($alignment: center);
   @include width-height($full-width);
   position: relative;
+  min-height: 270px;
 }
 
 .heading {
