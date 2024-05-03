@@ -104,10 +104,6 @@
     @include for-tablet-portrait-down {
       left: calc(50% - 46px);
     }
-    @include for-phone-only {
-      @include width-height(42px, 42px);
-      left: calc(50% - 28px);
-    }
   }
 
   &__ripple {
@@ -129,16 +125,6 @@
     &:nth-child(3) {
       animation-delay: 3s;
     }
-  }
-
-  &__icon-wrap {
-    @include flex($alignment: center, $justification: center);
-    @include width-height(50%, 50%);
-    @include border-radius(50%);
-    position: absolute;
-    background-color: $grey-border-color;
-    // background: transparent;
-    z-index: 100;
   }
 
   &__icon {
