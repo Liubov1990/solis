@@ -10,7 +10,7 @@
     $t-transform: uppercase,
     $color: $coral-color
   );
-  @include transition(all 0.5s ease);
+  @include transition(color 0.5s ease);
   text-align: center;
   background: transparent;
   border: none;
@@ -29,6 +29,7 @@
   &--bordered {
     @include width-height($full-width, 90px);
     @include border();
+    @include transition(border-color 0.5s ease);
     max-width: 300px;
 
     &:hover {
@@ -41,7 +42,7 @@
 
     &::after {
       @include width-height(98%, 13px);
-      @include transition(all 0.5s ease);
+      @include transition(background 0.5s ease);
       content: '';
       position: absolute;
       top: 13px;
