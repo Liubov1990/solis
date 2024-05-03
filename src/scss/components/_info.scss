@@ -15,7 +15,7 @@
       gap: 32px;
       margin-bottom: 0;
     }
-    @include for-tablet-landscape-down {
+    @include for-tablet-portrait-down {
       gap: 12px;
     }
   }

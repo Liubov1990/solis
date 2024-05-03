@@ -40,9 +40,11 @@
     max-width: 440px;
     margin-top: 50px;
     margin-bottom: 30px;
+    @include for-tablet-landscape-down {
+      margin-bottom: 15px;
+    }
     @include for-phone-only {
       margin-top: 37px;
-      margin-bottom: 15px;
     }
   }
 }
