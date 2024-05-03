@@ -1,4 +1,4 @@
-<section class="flex-column-center benefits">
+<section class="benefits section">
   <div class="container benefits__inner">
     <div class="benefits__item">
       {% include "./horisontal-rule.nunjucks" %}

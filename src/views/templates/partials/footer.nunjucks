@@ -1,4 +1,4 @@
-<footer class="flex-column-center footer">
+<footer class="footer section">
   <div class="container footer__container">
     {% include "./horisontal-rule.nunjucks" %}
     <div class="footer__inner">

@@ -1,4 +1,4 @@
-<section class="flex-column-center features">
+<section class="features section">
   <div class="container inner">
     <picture class="bg-picture bg-picture--half-width">
       <source
@@ -25,7 +25,7 @@
       />
     </picture>
 
-    <div class="flex-column-center text-block features__text-block">
+    <div class="text-block features__text-block section">
       <div class="features__elem">
         <h3 class="features__heading">On-Exchange Trading</h3>
         <ul class="features__list">

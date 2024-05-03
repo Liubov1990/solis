@@ -27,7 +27,7 @@
     </picture>
 
     <div class="text-block info__text-block">
-      <div class="flex-column-center info__statistics">
+      <div class="info__statistics section">
         <div class="info__statistic">
           <div class="info__statistic-value">
             <svg class="info__statistic-icon info__statistic-icon-color">

@@ -1,4 +1,4 @@
-<section class="flex-column-center quote">
+<section class="quote section">
   <div class="container quote__inner">
     <h2 class="mock-heading">Mock heading</h2>
     <picture class="bg-picture quote__bg-picture">

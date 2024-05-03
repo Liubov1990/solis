@@ -39,7 +39,7 @@ body {
   flex-shrink: 0;
 }
 
-.flex-column-center {
+.section {
   @include flex(column, center);
 }
 

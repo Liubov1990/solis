@@ -1,4 +1,4 @@
-<section class="flex-column-center reviews">
+<section class="reviews section">
   <div class="container reviews__inner">
     <h2 class="heading heading--w-spacing reviews__heading">Client <i class="accent"> reviews</i></h2>
     <p class="text reviews__text">

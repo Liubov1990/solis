@@ -1,4 +1,4 @@
-<section class="flex-column-center hero">
+<section class="hero section">
   <div class="container hero__inner">
     <h1 class="hero__heading">
       A peer-to-peer <strong class="strong">stablecoin <i class="accent">clearinghouse</i></strong> for the new economy
