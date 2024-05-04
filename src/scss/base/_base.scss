@@ -113,9 +113,11 @@ body {
 
 .bg-image {
   @include responsive-image();
+
   &--height {
     height: auto;
   }
+
   &--no-responsive {
     width: auto;
   }
