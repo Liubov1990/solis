@@ -11,6 +11,7 @@
 }
 
 .root:has(.video__tablet:hover) {
+  .video__ripples,
   .video__screensaver {
     display: none;
   }
