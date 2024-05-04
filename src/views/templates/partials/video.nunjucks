@@ -41,15 +41,15 @@
             class="bg-image"
             loading="lazy"
           />
-          <div class="video__ripples">
-            <div class="video__ripple"></div>
-            <div class="video__ripple"></div>
-            <div class="video__ripple"></div>
-            <svg class="video__icon video__icon-color">
-              <use xlink:href="./src/assets/sprite.svg#polygon" />
-            </svg>
-          </div>
         </picture>
+        <div class="video__ripples">
+          <div class="video__ripple"></div>
+          <div class="video__ripple"></div>
+          <div class="video__ripple"></div>
+          <svg class="video__icon video__icon-color">
+            <use xlink:href="./src/assets/sprite.svg#polygon" />
+          </svg>
+        </div>
       </div>
       <figcaption class="video__figcaption">
         <h2 class="heading video__heading">
