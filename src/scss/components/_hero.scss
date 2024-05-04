@@ -1,0 +1,43 @@
+@use './../abstracts' as *;
+
+.hero {
+  &__inner {
+    @include flex(column, flex-start);
+    @include width-height($full-width);
+    padding-top: 121px;
+    padding-bottom: 153px;
+    @include for-tablet-landscape-down {
+      padding-top: 65px;
+      padding-bottom: 100px;
+    }
+    @include for-tablet-portrait-down {
+      padding-top: 244px;
+      padding-bottom: 53px;
+    }
+  }
+
+  &__heading {
+    @include fonts($f-family: font('play'), $f-weight: $fw-regular);
+    @include responsive-line-height(44, 52);
+    @include responsive-font(36, 44);
+    max-width: 523px;
+    margin-bottom: 2px;
+    @include for-laptop-up {
+      font-size: 2.75rem;
+      line-height: 1.18;
+    }
+    @include for-phone-only {
+      margin-bottom: 3px;
+    }
+  }
+
+  &__text {
+    @include fonts($l-height: 1.44, $l-spacing: 0.002rem, $w-spacing: 0.055rem, $color: $main-text-color-rgba-08);
+    @include responsive-line-height(24, 26);
+    max-width: 439px;
+    margin-bottom: 48px;
+    @include for-phone-only {
+      margin-bottom: 30px;
+    }
+  }
+}

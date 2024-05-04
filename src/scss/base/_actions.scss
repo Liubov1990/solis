@@ -1,0 +1,22 @@
+@use './../abstracts' as *;
+
+.root:has(.header__burger--squeeze.is-active) {
+  .bg-picture {
+    display: none;
+  }
+
+  .header__logo-icon-color {
+    --fill-logo-color: #{$black-color};
+  }
+}
+
+.root:has(.video__tablet:hover) {
+  .video__ripples,
+  .video__screensaver {
+    display: none;
+  }
+
+  .video__frame {
+    display: block;
+  }
+}

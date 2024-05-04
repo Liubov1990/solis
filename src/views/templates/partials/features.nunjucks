@@ -1,0 +1,60 @@
+<section class="features section">
+  <div class="container inner features__inner">
+    <picture class="bg-picture bg-picture--half-width">
+      <source
+        type="image/avif"
+        media="(min-width: 900px)"
+        srcset="./src/assets/images/laptop/avif/features-bg.avif"
+        width="600"
+        height="540"
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 900px)"
+        srcset="./src/assets/images/laptop/webp/features-bg.webp"
+        width="600"
+        height="540"
+      />
+      <img
+        src="./src/assets/images/laptop/webp/features-bg.webp"
+        alt="Black-and-grey long abstract geometrical blocks"
+        class="bg-image bg-image--no-responsive"
+        width="600"
+        height="540"
+        loading="lazy"
+      />
+    </picture>
+
+    <div class="text-block features__text-block section">
+      <div class="features__elem">
+        <h3 class="features__heading">On-Exchange Trading</h3>
+        <ul class="features__list">
+          <li class="features__list-item">Instant</li>
+          <li class="features__list-item">Passive Inventory earns fees</li>
+        </ul>
+      </div>
+      <div class="features__elem">
+        <h3 class="features__heading">On-Chain Swaps</h3>
+        <ul class="features__list">
+          <li class="features__list-item">Low Counterparty risk</li>
+          <li class="features__list-item">Direct transfers</li>
+        </ul>
+      </div>
+      <div class="features__elem">
+        <h3 class="features__heading">Time Settlement Swaps</h3>
+        <ul class="features__list">
+          <li class="features__list-item">
+            <dfn
+              title="Lightning Bitcoin (LBTC) is a fully decentralized Internet-of-value protocol for global payments."
+              >LBTC</dfn
+            >
+            / Lightning and other sidechain swaps
+          </li>
+        </ul>
+      </div>
+      <button type="button" class="button button--bordered features__button">
+        <span class="button__text">JOIN NOW</span>
+      </button>
+    </div>
+  </div>
+</section>

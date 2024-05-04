@@ -1,0 +1,169 @@
+@use './../abstracts' as *;
+
+.video {
+  &__inner {
+    @include flex(column, center, center);
+    @include width-height($full-width);
+    padding-bottom: 101px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 80px;
+    }
+    @include for-tablet-portrait-down {
+      padding-bottom: 50px;
+    }
+  }
+
+  &__figure {
+    max-width: 970px;
+    margin: 0;
+  }
+
+  &__tablet {
+    @include width-height($full-width);
+    @include border();
+    @include border-radius(31px);
+    position: relative;
+    max-width: 970px;
+    max-height: 601px;
+    padding: 31px 70px 31px 30px;
+    box-sizing: border-box;
+    @include for-tablet-portrait-down {
+      padding: 11px 25px 12px 12px;
+    }
+
+    &::before,
+    &::after {
+      @include border();
+      @include border-radius(50%);
+      position: absolute;
+      content: '';
+      background: transparent;
+      box-sizing: border-box;
+    }
+
+    &::before {
+      @include width-height(13px, 13px);
+      left: 7px;
+      top: calc(50% - 6px);
+      @include for-tablet-portrait-down {
+        width: 4px;
+        height: 4px;
+        left: 2px;
+        top: calc(50% - 2px);
+      }
+    }
+
+    &::after {
+      @include width-height(35px, 35px);
+      right: 13px;
+      top: calc(50% - 18px);
+      @include for-tablet-portrait-down {
+        width: 12px;
+        height: 12px;
+        right: 4px;
+        top: calc(50% - 6px);
+      }
+    }
+  }
+
+  &__frame {
+    @include width-height($full-width, $full-height);
+    border: none;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  &__screensaver {
+    @include responsive-image();
+    z-index: 1;
+  }
+
+  &__frame,
+  &__screensaver {
+    max-height: 538px;
+    aspect-ratio: 16 / 9.9;
+  }
+
+  &__frame:hover,
+  &__screensaver:hover {
+    cursor: pointer;
+  }
+
+  &__ripples {
+    @include flex($alignment: center, $justification: center);
+    @include width-height(120px, 120px);
+    @include border-radius(50%);
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 79px);
+    @include for-tablet-landscape-down {
+      @include width-height(80px, 80px);
+      top: calc(50% - 40px);
+      left: calc(50% - 60px);
+    }
+    @include for-tablet-portrait-down {
+      left: calc(50% - 46px);
+    }
+
+    @include for-phone-only {
+      @include width-height(42px, 42px);
+      top: calc(50% - 22px);
+      left: calc(50% - 28px);
+    }
+  }
+
+  &__ripple {
+    @include width-height($full-width, $full-height);
+    @include border-radius(50%);
+    position: absolute;
+    background: $main-text-color;
+    opacity: 0;
+    animation: ripple 3s infinite ease-out;
+
+    &:nth-child(1) {
+      animation-delay: 1s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 2s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 3s;
+    }
+  }
+
+  &__icon {
+    @include width-height(33px, 46px);
+    transform: translateX(5px);
+    @include for-tablet-landscape-down {
+      @include width-height(22px, 24px);
+      transform: translateX(3px);
+    }
+    @include for-phone-only {
+      @include width-height(11px, 12px);
+      transform: translateX(2px);
+    }
+  }
+
+  &__icon-color {
+    --fill-polygon-color: #{$main-text-color};
+  }
+
+  &__figcaption {
+    padding-right: 80px;
+    box-sizing: border-box;
+    @include for-tablet-landscape-down {
+      padding-right: 5px;
+    }
+  }
+
+  &__heading {
+    margin-top: 51px;
+    margin-bottom: 26px;
+    @include for-tablet-landscape-down {
+      margin-top: 24px;
+      margin-bottom: 19px;
+    }
+  }
+}

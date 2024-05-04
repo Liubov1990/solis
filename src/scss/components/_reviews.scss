@@ -1,0 +1,94 @@
+@use './../abstracts' as *;
+
+.reviews {
+  &__inner {
+    @include flex(column);
+    @include width-height($full-width);
+    padding-bottom: 98px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 65px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 2px;
+    @include for-phone-only {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__text {
+    max-width: 400px;
+  }
+
+  &__slider {
+    @include flex();
+    @include width-height($full-width);
+    overflow: hidden;
+    max-width: 1202px;
+    margin: auto;
+  }
+
+  &__slider-block {
+    @include flex($justification: space-between);
+    @include width-height($full-width);
+    width: calc(400px * 6);
+    gap: 30px;
+    margin-top: 32px;
+    animation: slider 35s linear infinite;
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      margin-top: 8px;
+      animation: none;
+    }
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  &__slider-item {
+    @include width-height($full-width);
+    position: relative;
+    width: 370px;
+    height: 340px;
+    @include for-phone-only {
+      width: 343px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--mocked {
+      @include for-phone-only {
+        display: none;
+      }
+    }
+  }
+
+  &__overlay {
+    @include flex(column, $justification: space-between);
+    @include width-height($full-width, $full-height);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: $revievs-overlay-color-rgba-06;
+    padding: 29px 40px 31px;
+    box-sizing: border-box;
+  }
+
+  &__overlay-text {
+    @include fonts($f-size: 1rem, $f-weight: $fw-regular, $w-spacing: 0.0313em, $color: $white-color-rgba-08);
+    @include responsive-line-height(24, 26);
+    margin-top: 0;
+    @include for-laptop-up {
+      line-height: 1.625;
+    }
+  }
+}

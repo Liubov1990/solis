@@ -1,0 +1,20 @@
+<section class="contact section">
+  <div class="container contact__container">
+    {% include "./horisontal-rule.nunjucks" %}
+    <div class="contact__inner">
+      <div class="contact__block contact__block--padding">
+        <h2 class="heading heading--w-spacing contact__heading">Contact <i class="accent">our sales team</i></h2>
+        <p class="text contact__text">
+          Our team is happy to answer your sales questions.<br />
+          Fill out the form and we’ll be in touch as soon as possible.
+        </p>
+      </div>
+      <form action="#" method="post" name="contact" class="contact__form contact__block">
+        <input type="text" id="name" name="name" required placeholder="Your name" class="contact__input" />
+        <input type="email" id="email" name="email" required placeholder="Email" class="contact__input" />
+        <input type="text" id="message" name="message" required placeholder="Tell more" class="contact__input" />
+        <button class="button contact__button" type="submit"><span class="button__text">SEND REQUEST</span></button>
+      </form>
+    </div>
+  </div>
+</section>

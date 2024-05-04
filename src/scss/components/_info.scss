@@ -1,0 +1,126 @@
+@use './../abstracts' as *;
+
+.info {
+  @include flex(column, center, center);
+  background: transparent;
+
+  &__inner {
+    padding-bottom: 120px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 58px;
+    }
+  }
+
+  &__text-block {
+    padding-top: 45px;
+    padding-bottom: 4px;
+    @include for-tablet-landscape-down {
+      gap: 32px;
+      margin-bottom: 0;
+    }
+    @include for-tablet-portrait-down {
+      gap: 12px;
+    }
+  }
+
+  &__statistics {
+    flex-basis: 48%;
+    gap: 40px;
+    @include for-tablet-landscape-down {
+      flex-basis: 37%;
+      gap: 19px;
+    }
+  }
+
+  &__statistic {
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &:not(:last-child) {
+      .info__statistic-value {
+        transform: translateX(-2px);
+      }
+    }
+
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 50px);
+      height: 1px;
+      width: 100px;
+      background: $mint-color;
+    }
+
+    &-value,
+    &-label {
+      display: block;
+    }
+
+    &-value {
+      @include fonts($f-family: font('play'), $f-weight: $fw-regular);
+      @include responsive-font(48, 68);
+      @include responsive-line-height(48, 72);
+      margin-bottom: 13px;
+      @include for-laptop-up {
+        font-size: 4.25rem;
+        line-height: 1.05;
+      }
+      @include for-tablet-landscape-down {
+        @include responsive-font(38, 56);
+      }
+      @include for-phone-only {
+        @include responsive-font(48, 56);
+        margin-bottom: 5px;
+      }
+    }
+
+    &-icon {
+      @include width-height(18px, 51px);
+      vertical-align: bottom;
+      transform: translate(6px, 4px);
+      @include for-tablet-landscape-down {
+        width: 13px;
+        transform: translate(6px, 2px);
+        margin-right: 5px;
+      }
+
+      &-color {
+        --fill-currency-color: #{$grey-border-color};
+      }
+    }
+
+    &-label {
+      @include fonts($w-spacing: 0.06em, $color: $main-text-color-rgba-08);
+      margin-bottom: 40px;
+      @include for-tablet-landscape-down {
+        margin-bottom: 19px;
+      }
+    }
+  }
+
+  &__about {
+    flex-basis: 52%;
+    @include for-tablet-landscape-down {
+      flex-basis: 63%;
+    }
+  }
+
+  &__about-text {
+    padding-right: 5px;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    @include for-phone-only {
+      padding-right: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 48px;
+      @include for-phone-only {
+        padding-right: 0;
+        margin-bottom: 31px;
+      }
+    }
+  }
+}

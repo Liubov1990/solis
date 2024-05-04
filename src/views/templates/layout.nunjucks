@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Solis group presents first-of-its-kind stablecoin clearinghouse - API-enabled centralized platform, which addresses the key issues of inconsistent liquidity, stability and accessibility on the stablecoin market."
+    />
+    <title>Innovative stablecoin clearinghouse | Solis group</title>
+    <meta property="og:site_name" content="Innovative stablecoin clearinghouse | Solis group" />
+    <meta property="og:url" content="https://liubov1990.github.io/solis/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="New project of Solis group - clearinghouse for stablecoin" />
+    <meta
+      property="og:description"
+      content="Stablecoin clearinghouse - API-enabled centralized platform, addresses the key issues of inconsistent liquidity, stability and accessibility on the stablecoin market."
+    />
+    <meta
+      property="og:image"
+      content="https://liubov1990.github.io/solis/src/assets/images/laptop/webp/og-image.webp"
+    />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="icon" href="/src/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    {% block content %} {% endblock %}
+    <script src="./js/index.js"></script>
+  </body>
+</html>

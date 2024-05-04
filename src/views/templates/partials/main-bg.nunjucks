@@ -1,0 +1,15 @@
+<picture class="bg-picture bg-picture--root">
+  <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/bg.avif" />
+  <source type="image/avif" media="(max-width: 599px)" srcset="./src/assets/images/mobile/avif/bg.avif" />
+  <source type="image/avif" media="(max-width: 899px)" srcset="./src/assets/images/tablet/avif/bg.avif" />
+
+  <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/bg.webp" />
+  <source type="image/webp" media="(max-width: 599px)" srcset="./src/assets/images/mobile/webp/bg.webp" />
+  <source type="image/webp" media="(max-width: 899px)" srcset="./src/assets/images/tablet/webp/bg.webp" />
+
+  <img
+    src="./src/assets/images/laptop/webp/bg.webp"
+    alt="Perspective of many-storeyed abstract buildings on white background rising to top"
+    class="bg-image bg-image--height"
+  />
+</picture>

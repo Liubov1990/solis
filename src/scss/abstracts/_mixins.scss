@@ -1,0 +1,69 @@
+@use './variables' as *;
+@use './colors' as *;
+@use './functions' as *;
+
+@mixin width-height($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex($direction: row, $alignment: stretch, $justification: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $alignment;
+  justify-content: $justification;
+}
+
+@mixin fonts(
+  $f-family: font('lato'),
+  $f-style: $fs-normal,
+  $f-weight: $fw-light,
+  $f-size: 1.125rem,
+  $l-height: 1.44,
+  $l-spacing: normal,
+  $w-spacing: normal,
+  $t-transform: none,
+  $color: $main-text-color
+) {
+  font-family: $f-family;
+  font-style: $f-style;
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $l-height;
+  letter-spacing: $l-spacing;
+  word-spacing: $w-spacing;
+  text-transform: $t-transform;
+  color: $color;
+}
+
+@mixin responsive-font($min-size, $max-size) {
+  $font-diff: $max-size - $min-size;
+  $screen-diff: $max-content-width - 375;
+  font-size: calc(#{$min-size + px} + #{$font-diff} * ((100vw - #{$min-content-width}) / #{$screen-diff}));
+}
+
+@mixin responsive-line-height($min-size, $max-size) {
+  $line-height-diff: $max-size - $min-size;
+  $screen-diff: $max-content-width - 375;
+  line-height: calc(#{$min-size + px} + #{$line-height-diff} * ((100vw - #{$min-content-width}) / #{$screen-diff}));
+}
+
+@mixin responsive-image {
+  @include width-height($full-width, $full-height);
+  display: block;
+  object-fit: cover;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin border($b-width: 1px, $b-style: solid, $b-color: $grey-border-color) {
+  border-width: $b-width;
+  border-style: $b-style;
+  border-color: $b-color;
+}
+
+@mixin transition($params...) {
+  transition: $params;
+}
