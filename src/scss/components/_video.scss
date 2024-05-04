@@ -1,17 +1,16 @@
 @use './../abstracts' as *;
 
 .video {
-  padding-bottom: 101px;
-  @include for-tablet-landscape-down {
-    padding-bottom: 80px;
-  }
-  @include for-tablet-portrait-down {
-    padding-bottom: 50px;
-  }
-
   &__inner {
     @include flex(column, center, center);
     @include width-height($full-width);
+    padding-bottom: 101px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 80px;
+    }
+    @include for-tablet-portrait-down {
+      padding-bottom: 50px;
+    }
   }
 
   &__figure {

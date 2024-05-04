@@ -1,9 +1,11 @@
 @use './../abstracts' as *;
 
 .features {
-  padding-bottom: 88px;
-  @include for-tablet-landscape-down {
-    padding-bottom: 38px;
+  &__inner {
+    padding-bottom: 88px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 38px;
+    }
   }
 
   &__text-block {

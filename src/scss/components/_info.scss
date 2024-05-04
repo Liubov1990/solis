@@ -3,9 +3,12 @@
 .info {
   @include flex(column, center, center);
   background: transparent;
-  padding-bottom: 120px;
-  @include for-tablet-landscape-down {
-    padding-bottom: 58px;
+
+  &__inner {
+    padding-bottom: 120px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 58px;
+    }
   }
 
   &__text-block {

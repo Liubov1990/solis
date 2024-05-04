@@ -1,14 +1,13 @@
 @use './../abstracts' as *;
 
 .reviews {
-  padding-bottom: 98px;
-  @include for-tablet-landscape-down {
-    padding-bottom: 65px;
-  }
-
   &__inner {
     @include flex(column);
     @include width-height($full-width);
+    padding-bottom: 98px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 65px;
+    }
   }
 
   &__heading {

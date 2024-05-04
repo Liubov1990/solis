@@ -1,5 +1,5 @@
 <section class="features section">
-  <div class="container inner">
+  <div class="container inner features__inner">
     <picture class="bg-picture bg-picture--half-width">
       <source
         type="image/avif"
