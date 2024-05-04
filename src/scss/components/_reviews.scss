@@ -1,14 +1,13 @@
 @use './../abstracts' as *;
 
 .reviews {
-  padding-bottom: 98px;
-  @include for-tablet-landscape-down {
-    padding-bottom: 62px;
-  }
-
   &__inner {
     @include flex(column);
     @include width-height($full-width);
+    padding-bottom: 98px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 65px;
+    }
   }
 
   &__heading {
@@ -54,8 +53,8 @@
     @include width-height($full-width);
     position: relative;
     width: 370px;
+    height: 340px;
     @include for-phone-only {
-      max-width: 343px;
       width: 343px;
     }
 
@@ -85,13 +84,11 @@
   }
 
   &__overlay-text {
-    @include fonts(
-      $f-size: 1rem,
-      $f-weight: $fw-regular,
-      $l-height: 1.625,
-      $w-spacing: 0.0313em,
-      $color: $white-color-rgba-08
-    );
+    @include fonts($f-size: 1rem, $f-weight: $fw-regular, $w-spacing: 0.0313em, $color: $white-color-rgba-08);
+    @include responsive-line-height(24, 26);
     margin-top: 0;
+    @include for-laptop-up {
+      line-height: 1.625;
+    }
   }
 }

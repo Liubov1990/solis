@@ -1,19 +1,19 @@
 @use './../abstracts' as *;
 
 .hero {
-  padding-top: 121px;
-  padding-bottom: 153px;
-  @include for-tablet-landscape-down {
-    padding-top: 30px;
-    padding-bottom: 53px;
-  }
-  @include for-phone-only {
-    padding-top: 244px;
-  }
-
   &__inner {
     @include flex(column, flex-start);
     @include width-height($full-width);
+    padding-top: 121px;
+    padding-bottom: 153px;
+    @include for-tablet-landscape-down {
+      padding-top: 65px;
+      padding-bottom: 100px;
+    }
+    @include for-tablet-portrait-down {
+      padding-top: 244px;
+      padding-bottom: 53px;
+    }
   }
 
   &__heading {

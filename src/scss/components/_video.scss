@@ -1,17 +1,16 @@
 @use './../abstracts' as *;
 
 .video {
-  padding-bottom: 101px;
-  @include for-tablet-landscape-down {
-    padding-bottom: 80px;
-  }
-  @include for-tablet-portrait-down {
-    padding-bottom: 50px;
-  }
-
   &__inner {
     @include flex(column, center, center);
     @include width-height($full-width);
+    padding-bottom: 101px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 80px;
+    }
+    @include for-tablet-portrait-down {
+      padding-bottom: 50px;
+    }
   }
 
   &__figure {
@@ -95,17 +94,20 @@
     @include width-height(120px, 120px);
     @include border-radius(50%);
     position: absolute;
-    top: 40%;
+    top: calc(50% - 60px);
     left: calc(50% - 79px);
     @include for-tablet-landscape-down {
       @include width-height(80px, 80px);
+      top: calc(50% - 40px);
       left: calc(50% - 60px);
     }
     @include for-tablet-portrait-down {
       left: calc(50% - 46px);
     }
+
     @include for-phone-only {
       @include width-height(42px, 42px);
+      top: calc(50% - 22px);
       left: calc(50% - 28px);
     }
   }
@@ -129,16 +131,6 @@
     &:nth-child(3) {
       animation-delay: 3s;
     }
-  }
-
-  &__icon-wrap {
-    @include flex($alignment: center, $justification: center);
-    @include width-height(50%, 50%);
-    @include border-radius(50%);
-    position: absolute;
-    background-color: $grey-border-color;
-    // background: transparent;
-    z-index: 100;
   }
 
   &__icon {

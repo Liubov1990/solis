@@ -1,9 +1,11 @@
 @use './../abstracts' as *;
 
 .features {
-  padding-bottom: 88px;
-  @include for-tablet-landscape-down {
-    padding-bottom: 38px;
+  &__inner {
+    padding-bottom: 88px;
+    @include for-tablet-landscape-down {
+      padding-bottom: 38px;
+    }
   }
 
   &__text-block {
@@ -11,7 +13,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
     gap: 62px 98px;
-    padding: 87px 0 64px 68px;
+    padding: 88px 0 64px 68px;
     @include for-tablet-landscape-down {
       padding: 0 0 0 30px;
     }
@@ -54,7 +56,6 @@
   }
 
   &__button {
-    margin: 0 auto;
     @include for-phone-only {
       max-width: $full-width;
       margin-top: -2px;

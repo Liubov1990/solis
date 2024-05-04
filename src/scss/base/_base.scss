@@ -28,10 +28,6 @@ body {
   max-width: 1202px;
   padding: 0 16px;
   box-sizing: border-box;
-
-  &--small {
-    max-width: 1081px;
-  }
 }
 
 .header,
@@ -39,14 +35,15 @@ body {
   flex-shrink: 0;
 }
 
-.flex-column-center {
+.section {
   @include flex(column, center);
 }
 
 .inner {
-  @include flex();
+  @include flex($alignment: center);
   @include width-height($full-width);
   position: relative;
+  min-height: 270px;
 }
 
 .heading {
@@ -116,9 +113,11 @@ body {
 
 .bg-image {
   @include responsive-image();
+
   &--height {
     height: auto;
   }
+
   &--no-responsive {
     width: auto;
   }
@@ -131,12 +130,10 @@ body {
   right: 15px;
   max-width: 771px;
   background: $white-color-rgba-09;
-  margin-top: 45px;
   box-sizing: border-box;
   @include for-tablet-landscape-down {
     position: static;
     max-width: 100%;
-    margin-top: 0;
   }
   @include for-phone-only {
     flex-direction: column;

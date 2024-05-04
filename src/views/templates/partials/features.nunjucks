@@ -1,17 +1,31 @@
-<section class="flex-column-center features">
-  <div class="container inner">
+<section class="features section">
+  <div class="container inner features__inner">
     <picture class="bg-picture bg-picture--half-width">
-      <source type="image/avif" media="(min-width: 900px)" srcset="./src/assets/images/laptop/avif/features-bg.avif" />
-      <source type="image/webp" media="(min-width: 900px)" srcset="./src/assets/images/laptop/webp/features-bg.webp" />
-      <source type="image/png" media="(min-width: 900px)" srcset="./src/assets/images/laptop/png/features-bg.png" />
+      <source
+        type="image/avif"
+        media="(min-width: 900px)"
+        srcset="./src/assets/images/laptop/avif/features-bg.avif"
+        width="600"
+        height="540"
+      />
+      <source
+        type="image/webp"
+        media="(min-width: 900px)"
+        srcset="./src/assets/images/laptop/webp/features-bg.webp"
+        width="600"
+        height="540"
+      />
       <img
-        src="./src/assets/images/laptop/png/features-bg.png"
+        src="./src/assets/images/laptop/webp/features-bg.webp"
         alt="Black-and-grey long abstract geometrical blocks"
         class="bg-image bg-image--no-responsive"
+        width="600"
+        height="540"
+        loading="lazy"
       />
     </picture>
 
-    <div class="flex-column-center text-block features__text-block">
+    <div class="text-block features__text-block section">
       <div class="features__elem">
         <h3 class="features__heading">On-Exchange Trading</h3>
         <ul class="features__list">

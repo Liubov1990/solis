@@ -29,6 +29,7 @@
     @include for-tablet-portrait-down {
       flex-basis: auto;
     }
+
     &--padding {
       padding-right: 45px;
       @include for-tablet-portrait-down {
